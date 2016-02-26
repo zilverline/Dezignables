@@ -1,0 +1,21 @@
+PODS:
+  - Dezignables (0.1.0)
+  - FBSnapshotTestCase (2.0.7):
+    - FBSnapshotTestCase/SwiftSupport (= 2.0.7)
+  - FBSnapshotTestCase/Core (2.0.7)
+  - FBSnapshotTestCase/SwiftSupport (2.0.7):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - Dezignables (from `../`)
+  - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  Dezignables:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Dezignables: 0546f482dc0e8023a0c216a6805b0eff5b2f95e1
+  FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
+
+COCOAPODS: 0.39.0

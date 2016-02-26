@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Dezignables_Example', :exclusive => true do
+  pod 'Dezignables', :path => '../'
+end
+
+target 'Dezignables_Tests', :exclusive => true do
+  pod 'Dezignables', :path => '../'
+
+  pod 'FBSnapshotTestCase'
+end
