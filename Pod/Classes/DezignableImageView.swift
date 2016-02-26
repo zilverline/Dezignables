@@ -1,5 +1,5 @@
 //
-//  DezignableView.swift
+//  DezignableImageView.swift
 //  Pods
 //
 //  Created by Daniel van Hoesel on 26-02-16.
@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable public class DezignableView: UIView {
+// TODO: do not copy implementation, use protocol extensions
+@IBDesignable public class DezignableImageView: UIImageView {
   var borderlayer = CALayer()
   
   @IBInspectable public var borderWidth: CGFloat = 1.0 {
