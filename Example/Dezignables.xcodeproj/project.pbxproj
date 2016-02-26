@@ -13,7 +13,10 @@
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		607FACEC1AFB9204008FA782 /* DezignableBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* DezignableBorder.swift */; };
+		654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913941C80A60D0098AE5F /* DezignableRotation.swift */; };
+		654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913931C80A60D0098AE5F /* DezignableCorner.swift */; };
+		6549139B1C80A6B30098AE5F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* Base.swift */; };
 		9005A62E3A2E4356E082EDFC /* Pods_Dezignables_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E163D366E341C81E7816E8B3 /* Pods_Dezignables_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +41,10 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* Dezignables_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Dezignables_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		607FACEB1AFB9204008FA782 /* DezignableBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DezignableBorder.swift; sourceTree = "<group>"; };
+		654913931C80A60D0098AE5F /* DezignableCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableCorner.swift; sourceTree = "<group>"; };
+		654913941C80A60D0098AE5F /* DezignableRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableRotation.swift; sourceTree = "<group>"; };
+		654913991C80A6980098AE5F /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		7590EA8C7F9D4DFAFA9B64ED /* Pods_Dezignables_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dezignables_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		760B07189BA5E82E4D45F9CF /* Pods-Dezignables_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Tests/Pods-Dezignables_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CAC5626EFBAE56B1D6CCDF5 /* Pods-Dezignables_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Example/Pods-Dezignables_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,7 +130,10 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				654913991C80A6980098AE5F /* Base.swift */,
+				607FACEB1AFB9204008FA782 /* DezignableBorder.swift */,
+				654913931C80A60D0098AE5F /* DezignableCorner.swift */,
+				654913941C80A60D0098AE5F /* DezignableRotation.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -368,7 +377,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				6549139B1C80A6B30098AE5F /* Base.swift in Sources */,
+				654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */,
+				607FACEC1AFB9204008FA782 /* DezignableBorder.swift in Sources */,
+				654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

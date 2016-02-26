@@ -124,6 +124,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rotation">
+                                        <real key="value" value="45"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny5-6H-yv5" customClass="DezignableView" customModule="Dezignables">
@@ -152,7 +155,7 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleCorrection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -225,7 +228,7 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleCorrection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="bnD-7w-HNY" customClass="DezignableImageView" customModule="Dezignables">
@@ -304,7 +307,7 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleCorrection" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-vi-gNp" customClass="DezignableButton" customModule="Dezignables">

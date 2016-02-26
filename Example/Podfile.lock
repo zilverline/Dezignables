@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Dezignables: 444a858a37f59927355390adef5023d81be570c8
+  Dezignables: f24e28cfbc6898a74d432f4cc3c57a620ea1d404
   FBSnapshotTestCase: 7e85180d0d141a0cf472352edda7e80d7eaeb547
 
 COCOAPODS: 0.39.0
