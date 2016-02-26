@@ -10,15 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  @IBAction func tapButton(sender: AnyObject) {
+    let alertController = UIAlertController(title: "Tap", message: "Tapped the button", preferredStyle: .Alert)
+    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+    UIApplication.sharedApplication().keyWindow!.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+  }
 
 }
-

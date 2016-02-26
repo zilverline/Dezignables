@@ -1,25 +1,359 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QIt-mD-bbg">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Dezignables-->
+        <scene sceneID="eIP-oR-YPU">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="zxl-dC-UIn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="8rq-OM-8Ov">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="1ST-LB-Taj">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Aom-b0-0Yo" style="IBUITableViewCellStyleDefault" id="RUr-zA-Nlb">
+                                        <rect key="frame" x="0.0" y="99" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RUr-zA-Nlb" id="D23-gt-SDA">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DezignableView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Aom-b0-0Yo">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KUv-oY-7nw" kind="show" id="f5w-Ay-Sh4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="zDE-a6-X1G" style="IBUITableViewCellStyleDefault" id="o0w-qT-gZo">
+                                        <rect key="frame" x="0.0" y="143" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o0w-qT-gZo" id="rE1-Vy-n5I">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DezignableImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zDE-a6-X1G">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Q3F-81-kmn" kind="show" id="jpr-JY-z1h"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="XZC-vk-ukN" style="IBUITableViewCellStyleDefault" id="Dan-wg-xDP">
+                                        <rect key="frame" x="0.0" y="187" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dan-wg-xDP" id="jKG-nH-Ras">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DezignableButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XZC-vk-ukN">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="8hx-ja-Em4" kind="show" id="rXE-y3-jcb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="zxl-dC-UIn" id="eyL-hO-Low"/>
+                            <outlet property="delegate" destination="zxl-dC-UIn" id="jow-py-9BT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Dezignables" id="ENh-3l-LNd">
+                        <barButtonItem key="backBarButtonItem" title=" " id="UUp-EG-bhd"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dzk-07-bAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1418" y="648"/>
+        </scene>
+        <!--DezignableView-->
+        <scene sceneID="sOB-SA-WGH">
+            <objects>
+                <viewController id="KUv-oY-7nw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BQg-7d-JsM"/>
+                        <viewControllerLayoutGuide type="bottom" id="8UD-8i-TYy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZLB-O1-Nqh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3o-uT-Ryl" customClass="DezignableView" customModule="Dezignables">
+                                <rect key="frame" x="200" y="224.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eic-JP-5gP"/>
+                                    <constraint firstAttribute="height" constant="200" id="hCS-lN-RRM"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ny5-6H-yv5" customClass="DezignableView" customModule="Dezignables">
+                                <rect key="frame" x="0.0" y="94" width="600" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Interface Builder for the used properties." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEi-0R-tuI">
+                                        <rect key="frame" x="30" y="30" width="540" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="EEi-0R-tuI" firstAttribute="leading" secondItem="ny5-6H-yv5" secondAttribute="leading" constant="30" id="dfo-8F-8j8"/>
+                                    <constraint firstAttribute="bottom" secondItem="EEi-0R-tuI" secondAttribute="bottom" constant="30" id="ecH-YN-hNK"/>
+                                    <constraint firstItem="EEi-0R-tuI" firstAttribute="top" secondItem="ny5-6H-yv5" secondAttribute="top" constant="30" id="oTD-WD-njk"/>
+                                    <constraint firstAttribute="trailing" secondItem="EEi-0R-tuI" secondAttribute="trailing" constant="30" id="tpJ-Zq-rs2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleCorrection" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ny5-6H-yv5" firstAttribute="top" secondItem="BQg-7d-JsM" secondAttribute="bottom" constant="30" id="6Tj-O3-EMj"/>
+                            <constraint firstAttribute="trailing" secondItem="ny5-6H-yv5" secondAttribute="trailing" id="91F-RZ-q4V"/>
+                            <constraint firstItem="x3o-uT-Ryl" firstAttribute="top" secondItem="ny5-6H-yv5" secondAttribute="bottom" constant="50" id="cld-Za-f16"/>
+                            <constraint firstItem="x3o-uT-Ryl" firstAttribute="centerX" secondItem="ZLB-O1-Nqh" secondAttribute="centerX" id="hfl-to-3AX"/>
+                            <constraint firstItem="ny5-6H-yv5" firstAttribute="leading" secondItem="ZLB-O1-Nqh" secondAttribute="leading" id="pcj-xs-y0R"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DezignableView" id="mdb-0h-SEC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9d-ut-sWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="717" y="1450"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WLh-Ve-1XM">
+            <objects>
+                <navigationController id="QIt-mD-bbg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m66-wU-AbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zxl-dC-UIn" kind="relationship" relationship="rootViewController" id="g51-gN-ZpB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IqT-hd-6K8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="-94"/>
+        </scene>
+        <!--DezignableImageView-->
+        <scene sceneID="bys-B2-KTY">
+            <objects>
+                <viewController id="Q3F-81-kmn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vmf-y5-vAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="T2k-8h-eRE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wpC-3S-6J0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-zk-WcX" customClass="DezignableView" customModule="Dezignables">
+                                <rect key="frame" x="0.0" y="94" width="600" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Interface Builder for the used properties." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anw-T8-CuH">
+                                        <rect key="frame" x="30" y="30" width="540" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="anw-T8-CuH" firstAttribute="leading" secondItem="HB6-zk-WcX" secondAttribute="leading" constant="30" id="GWS-Dq-rlM"/>
+                                    <constraint firstAttribute="trailing" secondItem="anw-T8-CuH" secondAttribute="trailing" constant="30" id="QEO-OX-H94"/>
+                                    <constraint firstAttribute="bottom" secondItem="anw-T8-CuH" secondAttribute="bottom" constant="30" id="Tyw-Q2-1Op"/>
+                                    <constraint firstItem="anw-T8-CuH" firstAttribute="top" secondItem="HB6-zk-WcX" secondAttribute="top" constant="30" id="kPB-xp-tx4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleCorrection" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="bnD-7w-HNY" customClass="DezignableImageView" customModule="Dezignables">
+                                <rect key="frame" x="200" y="224.5" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="2LK-Jx-6Pv"/>
+                                    <constraint firstAttribute="width" constant="200" id="oNL-Sk-hcr"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HB6-zk-WcX" secondAttribute="trailing" id="0uL-ON-dpK"/>
+                            <constraint firstItem="HB6-zk-WcX" firstAttribute="top" secondItem="vmf-y5-vAd" secondAttribute="bottom" constant="30" id="JCB-0S-ZoX"/>
+                            <constraint firstItem="bnD-7w-HNY" firstAttribute="top" secondItem="HB6-zk-WcX" secondAttribute="bottom" constant="50" id="NgH-jT-cdD"/>
+                            <constraint firstItem="HB6-zk-WcX" firstAttribute="leading" secondItem="wpC-3S-6J0" secondAttribute="leading" id="QBF-tp-PWN"/>
+                            <constraint firstItem="bnD-7w-HNY" firstAttribute="centerX" secondItem="wpC-3S-6J0" secondAttribute="centerX" id="fDR-fL-0NF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DezignableImageView" id="36J-ME-uTJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oYq-IK-UtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1418" y="1450"/>
+        </scene>
+        <!--DezignableButton-->
+        <scene sceneID="H9m-y7-m0S">
+            <objects>
+                <viewController id="8hx-ja-Em4" customClass="ViewController" customModule="Dezignables_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7IN-OT-5nW"/>
+                        <viewControllerLayoutGuide type="bottom" id="xKM-fX-CmA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rDy-ZI-qv2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4g-E3-RNA" customClass="DezignableView" customModule="Dezignables">
+                                <rect key="frame" x="0.0" y="94" width="600" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Interface Builder for the used properties." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEJ-WX-32t">
+                                        <rect key="frame" x="30" y="30" width="540" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XEJ-WX-32t" firstAttribute="leading" secondItem="k4g-E3-RNA" secondAttribute="leading" constant="30" id="1ME-dO-F7b"/>
+                                    <constraint firstAttribute="trailing" secondItem="XEJ-WX-32t" secondAttribute="trailing" constant="30" id="VCJ-4W-jsz"/>
+                                    <constraint firstItem="XEJ-WX-32t" firstAttribute="top" secondItem="k4g-E3-RNA" secondAttribute="top" constant="30" id="hKo-0G-RAX"/>
+                                    <constraint firstAttribute="bottom" secondItem="XEJ-WX-32t" secondAttribute="bottom" constant="30" id="xAo-AS-gzf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="scaleCorrection" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-vi-gNp" customClass="DezignableButton" customModule="Dezignables">
+                                <rect key="frame" x="200" y="224.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="4FL-H6-1C2"/>
+                                    <constraint firstAttribute="height" constant="200" id="eDq-GE-Z4q"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapButton:" destination="8hx-ja-Em4" eventType="touchUpInside" id="BcK-QT-WJr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k4g-E3-RNA" firstAttribute="leading" secondItem="rDy-ZI-qv2" secondAttribute="leading" id="2Hy-fH-vMU"/>
+                            <constraint firstItem="k4g-E3-RNA" firstAttribute="top" secondItem="7IN-OT-5nW" secondAttribute="bottom" constant="30" id="F43-M4-kdS"/>
+                            <constraint firstAttribute="trailing" secondItem="k4g-E3-RNA" secondAttribute="trailing" id="TI0-1a-d4r"/>
+                            <constraint firstItem="T5L-vi-gNp" firstAttribute="top" secondItem="k4g-E3-RNA" secondAttribute="bottom" constant="50" id="aJs-uf-ip7"/>
+                            <constraint firstItem="T5L-vi-gNp" firstAttribute="centerX" secondItem="rDy-ZI-qv2" secondAttribute="centerX" id="nYW-Sv-Cyk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DezignableButton" id="9Ud-Qt-3R6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOg-k9-Mq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2104" y="1450"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat" width="1000" height="563"/>
+    </resources>
 </document>
