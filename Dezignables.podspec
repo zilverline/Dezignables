@@ -1,30 +1,16 @@
-#
-# Be sure to run `pod lib lint Dezignables.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = "Dezignables"
   s.version          = "1.0.0"
   s.summary          = "A collection of @IBDesignables"
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
+  A collection of @IBDesignable components I use often in all my projects. For now it includes a UIView, UIButton and UIImageView.
                        DESC
 
   s.homepage         = "https://github.com/zilverline/Dezignables"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Daniel van Hoesel" => "daniel@danielvanhoesel.nl" }
   s.source           = { :git => "https://github.com/zilverline/Dezignables.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '9.0'
   s.requires_arc = true
@@ -33,8 +19,4 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'Dezignables' => ['Pod/Assets/*.png']
   }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
