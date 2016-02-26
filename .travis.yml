@@ -8,5 +8,5 @@ xcode_workspace: Example/Dezignables.xcworkspace
 xcode_scheme: Dezignables-Example
 xcode_sdk: iphonesimulator9.1
 podfile: Example/Podfile
-script:
-- pod lib lint
+# script:
+# - pod lib lint
