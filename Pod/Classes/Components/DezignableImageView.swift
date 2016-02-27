@@ -58,6 +58,12 @@ import UIKit
     }
   }
   
+  @IBInspectable public var cornerCircle: Bool = false {
+    didSet {
+      self.setupCorner()
+    }
+  }
+  
   @IBInspectable public var rotation: CGFloat = CGFloat.NaN {
     didSet {
       self.setupRotation()

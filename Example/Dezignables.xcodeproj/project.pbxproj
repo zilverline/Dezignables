@@ -17,6 +17,7 @@
 		654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913941C80A60D0098AE5F /* DezignableRotation.swift */; };
 		654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913931C80A60D0098AE5F /* DezignableCorner.swift */; };
 		6549139B1C80A6B30098AE5F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* Base.swift */; };
+		65A6C9511C81F8EE00E0E57D /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 65A6C9501C81F8EE00E0E57D /* CHANGELOG.md */; };
 		9005A62E3A2E4356E082EDFC /* Pods_Dezignables_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E163D366E341C81E7816E8B3 /* Pods_Dezignables_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		654913931C80A60D0098AE5F /* DezignableCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableCorner.swift; sourceTree = "<group>"; };
 		654913941C80A60D0098AE5F /* DezignableRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableRotation.swift; sourceTree = "<group>"; };
 		654913991C80A6980098AE5F /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		65A6C9501C81F8EE00E0E57D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		7590EA8C7F9D4DFAFA9B64ED /* Pods_Dezignables_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dezignables_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		760B07189BA5E82E4D45F9CF /* Pods-Dezignables_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Tests/Pods-Dezignables_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8CAC5626EFBAE56B1D6CCDF5 /* Pods-Dezignables_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Example/Pods-Dezignables_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,9 +152,10 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
+				65A6C9501C81F8EE00E0E57D /* CHANGELOG.md */,
 				F633B3D7FAA29C6C5F30469D /* Dezignables.podspec */,
-				DBD5301C91D4C50D86DE15CA /* README.md */,
 				D3B265E3B9A5AE7BC9FD183E /* LICENSE */,
+				DBD5301C91D4C50D86DE15CA /* README.md */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				65A6C9511C81F8EE00E0E57D /* CHANGELOG.md in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

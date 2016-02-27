@@ -10,14 +10,22 @@ import UIKit
 
 public protocol DezignableCorner {
   var cornerRadius: CGFloat { get set }
+  var cornerCircle: Bool { get set }
 }
 
 public extension DezignableCorner where Self: UIView {
   public func setupCorner() {
-    if self.cornerRadius.isNaN || self.cornerRadius <= 0 {
+    let cornerRadius: CGFloat
+    if self.cornerCircle {
+      cornerRadius = self.frame.size.height / 2
+    } else {
+      cornerRadius = self.cornerRadius
+    }
+    
+    if cornerRadius.isNaN || cornerRadius <= 0 {
       return
     }
     
-    self.layer.cornerRadius = self.cornerRadius
+    self.layer.cornerRadius = cornerRadius
   }
 }

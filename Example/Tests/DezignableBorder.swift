@@ -21,7 +21,6 @@ class DezignableBorderTests: Base {
     self.subject.borderBottom = true
     self.subject.borderLeft = true
     self.subject.borderRight = true
-    self.subject.cornerRadius = 20.0
     self.subject.borderColor = UIColor.blackColor()
     self.subject.backgroundColor = UIColor.redColor()
     self.subject.borderScaleCorrection = true

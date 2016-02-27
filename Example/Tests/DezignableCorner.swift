@@ -9,4 +9,9 @@ class DezignableCornerTests: Base {
     FBSnapshotVerifyView(self.subject)
   }
   
+  func testCircle() {
+    self.subject.cornerCircle = true
+    FBSnapshotVerifyView(self.subject)
+  }
+  
 }
