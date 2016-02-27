@@ -5,11 +5,11 @@
 [![License](https://img.shields.io/cocoapods/l/Dezignables.svg?style=flat)](http://cocoapods.org/pods/Dezignables)
 [![Platform](https://img.shields.io/cocoapods/p/Dezignables.svg?style=flat)](http://cocoapods.org/pods/Dezignables)
 
-A collection of @IBDesignable components I often use in all of my iOS projects. For now it includes a UIView, UIButton and UIImageView.
+A collection of designable components I often use in my iOS projects. For now it includes a UIView, UIButton and UIImageView.
 
 Checkout the Example project to see all available options.
 
-## Usage
+## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
@@ -20,6 +20,30 @@ Dezignables is available through [CocoaPods](http://cocoapods.org). To install i
 ```ruby
 pod "Dezignables"
 ```
+
+## API
+
+### Components
+
+| Class               | Dezignables                                                                      |
+|---------------------|----------------------------------------------------------------------------------|
+| DezignableView      | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li>|
+| DezignableButton    | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li>|
+| DezignableImageView | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li>|
+
+### Dezignables
+
+#### DezignableBorder
+
+| Property              | Description                                                                                                                                                                                           | Preview            |
+|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| borderWidth           | Sets the width of the border in points                                                                                                                                                                | :white_check_mark: |
+| borderColor           | Color of the border                                                                                                                                                                                   | :white_check_mark: |
+| borderTop             | Draws top border                                                                                                                                                                                      | :white_check_mark: |
+| borderBottom          | Draws bottom border                                                                                                                                                                                   | :white_check_mark: |
+| borderLeft            | Draws left border                                                                                                                                                                                     | :white_check_mark: |
+| borderRight           | Draws right border                                                                                                                                                                                    | :white_check_mark: |
+| borderScaleCorrection | Converts the borderWidth to physical pixels. The borderWidth value gets divided by `UIScreen.mainScreen().scale`. To create a hairline border use `borderWidth=1.0` and `borderScaleCorrection=true`. | :white_check_mark: |
 
 ## License
 
