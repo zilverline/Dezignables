@@ -5,9 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/Dezignables.svg?style=flat)](http://cocoapods.org/pods/Dezignables)
 [![Platform](https://img.shields.io/cocoapods/p/Dezignables.svg?style=flat)](http://cocoapods.org/pods/Dezignables)
 
-A collection of designable components I often use in my iOS projects. For now it includes a UIView, UIButton and UIImageView.
-
-Checkout the Example project to see all available options.
+A collection of designable components I often use in my iOS projects. Checkout the Example project to see all available options.
 
 ## Example
 
