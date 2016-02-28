@@ -1085,12 +1085,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-Hk-W2n" customClass="DezignableView" customModule="Dezignables">
-                                                    <rect key="frame" x="275" y="12" width="50" height="50"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nok-Fm-3aD" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="13" width="50" height="50"/>
                                                     <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="3ik-G6-B7m"/>
-                                                        <constraint firstAttribute="height" constant="50" id="bb3-Op-vzf"/>
+                                                        <constraint firstAttribute="width" constant="50" id="IwA-Yg-mZy"/>
+                                                        <constraint firstAttribute="height" constant="50" id="Jxi-dH-NHb"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
@@ -1099,12 +1099,18 @@
                                                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
                                                             <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                                         </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
+                                                            <point key="value" x="1" y="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStopPoint">
+                                                            <point key="value" x="1" y="1"/>
+                                                        </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="lcy-Hk-W2n" firstAttribute="centerY" secondItem="TCw-4R-0Mj" secondAttribute="centerY" id="QGY-bX-87e"/>
-                                                <constraint firstItem="lcy-Hk-W2n" firstAttribute="centerX" secondItem="TCw-4R-0Mj" secondAttribute="centerX" id="SKz-fg-lO6"/>
+                                                <constraint firstItem="Nok-Fm-3aD" firstAttribute="centerX" secondItem="TCw-4R-0Mj" secondAttribute="centerX" id="1b8-zg-Uxd"/>
+                                                <constraint firstItem="Nok-Fm-3aD" firstAttribute="centerY" secondItem="TCw-4R-0Mj" secondAttribute="centerY" id="X6O-3z-0I0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
