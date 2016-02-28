@@ -17,7 +17,6 @@
 		654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913941C80A60D0098AE5F /* DezignableRotation.swift */; };
 		654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913931C80A60D0098AE5F /* DezignableCorner.swift */; };
 		6549139B1C80A6B30098AE5F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* Base.swift */; };
-		65A6C9511C81F8EE00E0E57D /* CHANGELOG.md in Sources */ = {isa = PBXBuildFile; fileRef = 65A6C9501C81F8EE00E0E57D /* CHANGELOG.md */; };
 		9005A62E3A2E4356E082EDFC /* Pods_Dezignables_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E163D366E341C81E7816E8B3 /* Pods_Dezignables_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -372,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				65A6C9511C81F8EE00E0E57D /* CHANGELOG.md in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

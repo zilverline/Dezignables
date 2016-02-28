@@ -8,7 +8,13 @@
 
 import UIKit
 
-@IBDesignable public class DezignableImageView: UIImageView, DezignableBorder, DezignableCorner, DezignableRotation {
+@IBDesignable public class DezignableImageView: UIImageView, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground {
+  
+  @IBInspectable public var backgroundFillColor: UIColor? = nil {
+    didSet {
+      self.setupBackground()
+    }
+  }
   
   @IBInspectable public var borderWidth: CGFloat = CGFloat.NaN {
     didSet {
@@ -72,7 +78,9 @@ import UIKit
   
   public override func layoutSubviews() {
     super.layoutSubviews()
+    self.setupBackground()
     self.setupBorder()
+    self.setupCorner()
   }
   
 }
