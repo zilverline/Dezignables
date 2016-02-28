@@ -23,6 +23,8 @@ pod "Dezignables"
 
 ## API
 
+Dezignables are implemented using protocol extensions. The pre-made components include all or most of the dezignables available and are ready to use. You could also apply one or more of the dezignable protocols on your own components.
+
 ### Components
 
 | Class               | Dezignables                                                                      |
