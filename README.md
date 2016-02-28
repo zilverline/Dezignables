@@ -70,6 +70,17 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 | backgroundGradientStartPoint | Position of the start color in the gradient | :white_check_mark: |
 | backgroundGradientStopPoint  | Position of the stop color in the gradient  | :white_check_mark: |
 
+#### DezignableShadow
+
+When you want to use `DezignableShadow` together with `DezignableBorder` you'll need to use two different views and lay them out exactly on top of each other. See the Example app for a demo.
+
+| Property      | Description                                                                | Preview |
+|---------------|----------------------------------------------------------------------------|---------|
+| shadowColor   | The color of the shadow                                                    | :x:     |
+| shadowRadius  | How far out the shadow will spread                                         | :x:     |
+| shadowOpacity | How transparant the shadow will be. 0.0 is invisible, 1.0 is fully visible | :x:     |
+| shadowOffset  | From what point the shadow will draw                                       | :x:     |
+
 ## License
 
 Dezignables is available under the MIT license. See the LICENSE file for more info.

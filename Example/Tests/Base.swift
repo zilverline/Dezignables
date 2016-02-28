@@ -14,13 +14,16 @@ import Dezignables
 class Base: FBSnapshotTestCase {
 
   var subject: DezignableView!
+  var containerView: UIView!
   
   override func setUp() {
     super.setUp()
     self.recordMode = false
     
-    self.subject = DezignableView(frame: CGRectMake(0, 0, 200, 200))
+    self.containerView = UIView(frame: CGRectMake(0, 0, 400, 400))
+    self.subject = DezignableView(frame: CGRectMake(100, 100, 200, 200))
     self.subject.backgroundColor = UIColor.redColor()
+    self.containerView.addSubview(self.subject)
   }
   
 }

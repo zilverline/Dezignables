@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class DezignableButton: UIButton, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground {
+@IBDesignable public class DezignableButton: UIButton, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground, DezignableShadow {
   
   @IBInspectable public var backgroundFillColor: UIColor? = nil {
     didSet {
@@ -97,6 +97,30 @@ import UIKit
   @IBInspectable public var rotation: CGFloat = CGFloat.NaN {
     didSet {
       self.setupRotation()
+    }
+  }
+  
+  @IBInspectable public var shadowColor: UIColor? = nil {
+    didSet {
+      self.setupShadow()
+    }
+  }
+  
+  @IBInspectable public var shadowRadius: CGFloat = CGFloat.NaN {
+    didSet {
+      self.setupShadow()
+    }
+  }
+  
+  @IBInspectable public var shadowOpacity: CGFloat = CGFloat.NaN {
+    didSet {
+      self.setupShadow()
+    }
+  }
+  
+  @IBInspectable public var shadowOffset: CGPoint = CGPointMake(CGFloat.NaN, CGFloat.NaN) {
+    didSet {
+      self.setupShadow()
     }
   }
   

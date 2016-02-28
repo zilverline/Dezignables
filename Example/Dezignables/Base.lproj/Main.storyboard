@@ -159,6 +159,26 @@
                                             <segue destination="4mB-vb-16h" kind="show" id="ZPr-AZ-q3o"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="vle-jx-jg6" style="IBUITableViewCellStyleDefault" id="uqP-YK-Ha9">
+                                        <rect key="frame" x="0.0" y="471.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-YK-Ha9" id="ucU-sM-twl">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DezignableShadow" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vle-jx-jg6">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Zs9-KN-q18" kind="show" id="E0x-TB-MSC"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1117,6 +1137,229 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XDM-SL-3i8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3499" y="1534"/>
+        </scene>
+        <!--DezignableShadow-->
+        <scene sceneID="DeW-BJ-fqm">
+            <objects>
+                <tableViewController id="Zs9-KN-q18" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="75" sectionHeaderHeight="18" sectionFooterHeight="18" id="UJA-J5-mRI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <sections>
+                            <tableViewSection headerTitle="Shadow" footerTitle="Shadows can not be previewed in Interface Builder." id="BJn-kt-rPm">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uzj-0a-JRL">
+                                        <rect key="frame" x="0.0" y="113.5" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uzj-0a-JRL" id="tv6-2g-aHI">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n75-Pr-3AA" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="gXH-pO-ZCX"/>
+                                                        <constraint firstAttribute="width" constant="50" id="kFu-rT-NQ6"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                            <point key="value" x="0.0" y="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="n75-Pr-3AA" firstAttribute="centerX" secondItem="tv6-2g-aHI" secondAttribute="centerX" id="Z7f-kT-NCh"/>
+                                                <constraint firstItem="n75-Pr-3AA" firstAttribute="centerY" secondItem="tv6-2g-aHI" secondAttribute="centerY" id="r9W-Qf-uAF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bo2-h3-8AC">
+                                        <rect key="frame" x="0.0" y="188.5" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bo2-h3-8AC" id="2XM-EI-7mo">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mef-LW-Q9b" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="w2R-qZ-sIT"/>
+                                                        <constraint firstAttribute="height" constant="50" id="wtZ-NV-C0L"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                            <point key="value" x="0.0" y="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Mef-LW-Q9b" firstAttribute="centerY" secondItem="2XM-EI-7mo" secondAttribute="centerY" id="MJO-rR-NPi"/>
+                                                <constraint firstItem="Mef-LW-Q9b" firstAttribute="centerX" secondItem="2XM-EI-7mo" secondAttribute="centerX" id="wXI-pf-052"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Shadow with border" footerTitle="Use one view for the shadow and one view for the border and lay them out exactly on top of each other." id="Tiu-M5-Z1R">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mWO-Vj-6mp">
+                                        <rect key="frame" x="0.0" y="330" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mWO-Vj-6mp" id="P9L-KL-Tcd">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Zm-Ff-mJQ" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12.5" width="50" height="50"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kUV-tK-rBi" customClass="DezignableView" customModule="Dezignables">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="1N9-lL-9o3"/>
+                                                                <constraint firstAttribute="width" constant="50" id="cJm-eZ-cDY"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                    <real key="value" value="1"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                    <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="0e3-Rg-C70"/>
+                                                        <constraint firstAttribute="width" constant="50" id="p2U-7W-4vN"/>
+                                                        <constraint firstItem="kUV-tK-rBi" firstAttribute="centerX" secondItem="4Zm-Ff-mJQ" secondAttribute="centerX" id="pk3-QM-Bau"/>
+                                                        <constraint firstItem="kUV-tK-rBi" firstAttribute="centerY" secondItem="4Zm-Ff-mJQ" secondAttribute="centerY" id="v8H-b6-Sxu"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                            <point key="value" x="0.0" y="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Zm-Ff-mJQ" firstAttribute="centerX" secondItem="P9L-KL-Tcd" secondAttribute="centerX" id="PYF-YY-XJp"/>
+                                                <constraint firstItem="4Zm-Ff-mJQ" firstAttribute="centerY" secondItem="P9L-KL-Tcd" secondAttribute="centerY" id="wDF-jY-7v2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="98J-Nm-2TT">
+                                        <rect key="frame" x="0.0" y="405" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="98J-Nm-2TT" id="X7R-c7-lFf">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWx-lH-3zi" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="nB7-Oh-JJw"/>
+                                                        <constraint firstAttribute="width" constant="50" id="vyT-PM-PUp"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                            <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                            <point key="value" x="0.0" y="0.0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l1u-6o-IoX" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12.5" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="ceO-iY-dgB"/>
+                                                        <constraint firstAttribute="height" constant="50" id="i5i-CZ-1Z7"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rWx-lH-3zi" firstAttribute="centerY" secondItem="X7R-c7-lFf" secondAttribute="centerY" id="ObM-VB-6vq"/>
+                                                <constraint firstItem="rWx-lH-3zi" firstAttribute="centerX" secondItem="X7R-c7-lFf" secondAttribute="centerX" id="oFG-B5-dVj"/>
+                                                <constraint firstItem="l1u-6o-IoX" firstAttribute="centerY" secondItem="X7R-c7-lFf" secondAttribute="centerY" id="zu7-OS-0BE"/>
+                                                <constraint firstItem="l1u-6o-IoX" firstAttribute="centerX" secondItem="X7R-c7-lFf" secondAttribute="centerX" id="zyw-fY-eig"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="Zs9-KN-q18" id="yLf-Yw-Nea"/>
+                            <outlet property="delegate" destination="Zs9-KN-q18" id="2AX-2a-O98"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="DezignableShadow" id="Bqh-ds-jmh"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQw-J0-ugK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4146" y="1534"/>
         </scene>
     </scenes>
     <resources>
