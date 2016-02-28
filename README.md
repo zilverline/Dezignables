@@ -45,6 +45,20 @@ pod "Dezignables"
 | borderRight           | Draws right border                                                                                                                                                                                    | :white_check_mark: |
 | borderScaleCorrection | Converts the borderWidth to physical pixels. The borderWidth value gets divided by `UIScreen.mainScreen().scale`. To create a hairline border use `borderWidth=1.0` and `borderScaleCorrection=true`. | :white_check_mark: |
 
+#### DezignableCorner
+
+| Property     | Description                                                                                                      | Preview            |
+|--------------|------------------------------------------------------------------------------------------------------------------|--------------------|
+| cornerRadius | The radius of all four corners, in points                                                                        | :white_check_mark: |
+| cornerCircle | Make a full circle based on the height of the view. The preview looks weird when used with `DezignableRotation`. | :white_check_mark: |
+
+#### DezignableRotation
+
+| Property | Description                                  | Preview |
+|----------|----------------------------------------------|---------|
+| rotation | The amount of degrees the view should rotate | :x:     |
+
+
 ## License
 
 Dezignables is available under the MIT license. See the LICENSE file for more info.
