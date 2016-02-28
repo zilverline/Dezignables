@@ -75,12 +75,32 @@
                                             <segue destination="8hx-ja-Em4" kind="show" id="rXE-y3-jcb"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Q4G-Ru-BP6" style="IBUITableViewCellStyleDefault" id="uYB-Zm-TBJ">
+                                        <rect key="frame" x="0.0" y="245.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uYB-Zm-TBJ" id="JKo-dK-ZOd">
+                                            <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="DezignableLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Q4G-Ru-BP6">
+                                                    <rect key="frame" x="15" y="0.0" width="550" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="guj-nC-166" kind="show" id="xhO-mz-cJr"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Dezignables" id="tKi-2l-keh">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Wyc-c5-4fi" style="IBUITableViewCellStyleDefault" id="vqk-hs-EAS">
-                                        <rect key="frame" x="0.0" y="295.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="339.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vqk-hs-EAS" id="Zho-Tb-b00">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -100,7 +120,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="u9q-Te-bZX" style="IBUITableViewCellStyleDefault" id="MjV-cA-1wS">
-                                        <rect key="frame" x="0.0" y="339.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="383.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MjV-cA-1wS" id="FBR-KF-cxw">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -120,7 +140,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="GIO-98-gnG" style="IBUITableViewCellStyleDefault" id="7Yf-4y-66p">
-                                        <rect key="frame" x="0.0" y="383.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="427.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Yf-4y-66p" id="ew3-N1-c2L">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -140,7 +160,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="YIc-w8-lpZ" style="IBUITableViewCellStyleDefault" id="rJR-8R-rdA">
-                                        <rect key="frame" x="0.0" y="427.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="471.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rJR-8R-rdA" id="PO7-Wt-F9E">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -160,7 +180,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="vle-jx-jg6" style="IBUITableViewCellStyleDefault" id="uqP-YK-Ha9">
-                                        <rect key="frame" x="0.0" y="471.5" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="515.5" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uqP-YK-Ha9" id="ucU-sM-twl">
                                             <rect key="frame" x="0.0" y="0.0" width="567" height="43.5"/>
@@ -647,7 +667,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9d-ut-sWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="1534"/>
+            <point key="canvasLocation" x="-1223" y="1534"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WLh-Ve-1XM">
@@ -742,7 +762,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYq-IK-UtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="288" y="1534"/>
+            <point key="canvasLocation" x="-576" y="1534"/>
         </scene>
         <!--DezignableButton-->
         <scene sceneID="H9m-y7-m0S">
@@ -826,7 +846,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VOg-k9-Mq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="926" y="1534"/>
+            <point key="canvasLocation" x="62" y="1534"/>
         </scene>
         <!--DezignableCorner-->
         <scene sceneID="QDi-49-ySz">
@@ -1360,6 +1380,86 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQw-J0-ugK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4146" y="1534"/>
+        </scene>
+        <!--DezignableLabel-->
+        <scene sceneID="drC-C6-dgt">
+            <objects>
+                <viewController id="guj-nC-166" customClass="ViewController" customModule="Dezignables_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="geh-uz-TNy"/>
+                        <viewControllerLayoutGuide type="bottom" id="ltx-Ad-feu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pqc-UO-BnK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T3G-Zs-ziR" customClass="DezignableView" customModule="Dezignables">
+                                <rect key="frame" x="0.0" y="94" width="600" height="80.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Interface Builder for the used properties." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zB1-TQ-lOg">
+                                        <rect key="frame" x="30" y="30" width="540" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zB1-TQ-lOg" secondAttribute="bottom" constant="30" id="5Q6-WT-e5h"/>
+                                    <constraint firstAttribute="trailing" secondItem="zB1-TQ-lOg" secondAttribute="trailing" constant="30" id="Cic-KH-E35"/>
+                                    <constraint firstItem="zB1-TQ-lOg" firstAttribute="leading" secondItem="T3G-Zs-ziR" secondAttribute="leading" constant="30" id="Iol-cS-aip"/>
+                                    <constraint firstItem="zB1-TQ-lOg" firstAttribute="top" secondItem="T3G-Zs-ziR" secondAttribute="top" constant="30" id="eLV-A3-bFa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyU-eR-2TR" customClass="DezignableLabel" customModule="Dezignables">
+                                <rect key="frame" x="235.5" y="275" width="130" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MEN-6c-GJ6"/>
+                                    <constraint firstAttribute="width" constant="130" id="gqD-lr-JQd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderTop" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="T3G-Zs-ziR" firstAttribute="leading" secondItem="Pqc-UO-BnK" secondAttribute="leading" id="3xe-w3-SNb"/>
+                            <constraint firstItem="T3G-Zs-ziR" firstAttribute="top" secondItem="geh-uz-TNy" secondAttribute="bottom" constant="30" id="69T-6x-Wax"/>
+                            <constraint firstAttribute="trailing" secondItem="T3G-Zs-ziR" secondAttribute="trailing" id="7nv-Ye-pgf"/>
+                            <constraint firstItem="TyU-eR-2TR" firstAttribute="centerX" secondItem="Pqc-UO-BnK" secondAttribute="centerX" id="Nf9-k8-OSh"/>
+                            <constraint firstItem="TyU-eR-2TR" firstAttribute="centerY" secondItem="Pqc-UO-BnK" secondAttribute="centerY" id="Yr1-Tq-sYD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DezignableLabel" id="ZxT-GD-Eh8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eBL-XD-KqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712" y="1534"/>
         </scene>
     </scenes>
     <resources>

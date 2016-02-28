@@ -27,11 +27,12 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 
 ### Components
 
-| Class               | Dezignables                                                                      |
-|---------------------|----------------------------------------------------------------------------------|
-| DezignableView      | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li>|
-| DezignableButton    | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li>|
-| DezignableImageView | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li>|
+| Class               | Dezignables                                                                                                                            |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| DezignableView      | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
+| DezignableButton    | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
+| DezignableImageView | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
+| DezignableLabel     | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li>                         |
 
 ### Dezignables
 
