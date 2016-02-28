@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class DezignableLabel: UILabel, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground {
+@IBDesignable public class DezignableLabel: UILabel, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground, DezignableShadow {
   
   @IBInspectable public var backgroundFillColor: UIColor? = nil {
     didSet {
@@ -97,6 +97,30 @@ import UIKit
   @IBInspectable public var rotation: CGFloat = CGFloat.NaN {
     didSet {
       self.setupRotation()
+    }
+  }
+  
+  @IBInspectable public var boxShadowColor: UIColor? = nil {
+    didSet {
+      self.setupShadow()
+    }
+  }
+  
+  @IBInspectable public var boxShadowRadius: CGFloat = CGFloat.NaN {
+    didSet {
+      self.setupShadow()
+    }
+  }
+  
+  @IBInspectable public var boxShadowOpacity: CGFloat = CGFloat.NaN {
+    didSet {
+      self.setupShadow()
+    }
+  }
+  
+  @IBInspectable public var boxShadowOffset: CGPoint = CGPointMake(CGFloat.NaN, CGFloat.NaN) {
+    didSet {
+      self.setupShadow()
     }
   }
   

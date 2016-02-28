@@ -32,7 +32,7 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 | DezignableView      | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
 | DezignableButton    | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
 | DezignableImageView | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
-| DezignableLabel     | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li>                         |
+| DezignableLabel     | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
 
 ### Dezignables
 
@@ -75,12 +75,12 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 
 When you want to use `DezignableShadow` together with `DezignableBorder` you'll need to use two different views and lay them out exactly on top of each other. See the Example app for a demo.
 
-| Property      | Description                                                                | Preview |
-|---------------|----------------------------------------------------------------------------|---------|
-| shadowColor   | The color of the shadow                                                    | :x:     |
-| shadowRadius  | How far out the shadow will spread                                         | :x:     |
-| shadowOpacity | How transparant the shadow will be. 0.0 is invisible, 1.0 is fully visible | :x:     |
-| shadowOffset  | From what point the shadow will draw                                       | :x:     |
+| Property         | Description                                                                | Preview |
+|------------------|----------------------------------------------------------------------------|---------|
+| boxShadowColor   | The color of the shadow                                                    | :x:     |
+| boxShadowRadius  | How far out the shadow will spread                                         | :x:     |
+| boxShadowOpacity | How transparant the shadow will be. 0.0 is invisible, 1.0 is fully visible | :x:     |
+| boxShadowOffset  | From what point the shadow will draw                                       | :x:     |
 
 ## License
 

@@ -100,25 +100,25 @@ import UIKit
     }
   }
   
-  @IBInspectable public var shadowColor: UIColor? = nil {
+  @IBInspectable public var boxShadowColor: UIColor? = nil {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var shadowRadius: CGFloat = CGFloat.NaN {
+  @IBInspectable public var boxShadowRadius: CGFloat = CGFloat.NaN {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var shadowOpacity: CGFloat = CGFloat.NaN {
+  @IBInspectable public var boxShadowOpacity: CGFloat = CGFloat.NaN {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var shadowOffset: CGPoint = CGPointMake(CGFloat.NaN, CGFloat.NaN) {
+  @IBInspectable public var boxShadowOffset: CGPoint = CGPointMake(CGFloat.NaN, CGFloat.NaN) {
     didSet {
       self.setupShadow()
     }

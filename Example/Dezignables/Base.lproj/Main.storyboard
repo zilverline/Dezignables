@@ -1185,16 +1185,16 @@
                                                         <constraint firstAttribute="width" constant="50" id="kFu-rT-NQ6"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="boxShadowColor">
                                                             <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowRadius">
                                                             <real key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowOpacity">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="boxShadowOffset">
                                                             <point key="value" x="0.0" y="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
@@ -1222,16 +1222,16 @@
                                                         <constraint firstAttribute="height" constant="50" id="wtZ-NV-C0L"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="boxShadowColor">
                                                             <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowRadius">
                                                             <real key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowOpacity">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="boxShadowOffset">
                                                             <point key="value" x="0.0" y="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
@@ -1287,16 +1287,16 @@
                                                         <constraint firstItem="kUV-tK-rBi" firstAttribute="centerY" secondItem="4Zm-Ff-mJQ" secondAttribute="centerY" id="v8H-b6-Sxu"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="boxShadowColor">
                                                             <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowRadius">
                                                             <real key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowOpacity">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="boxShadowOffset">
                                                             <point key="value" x="0.0" y="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
@@ -1324,16 +1324,16 @@
                                                         <constraint firstAttribute="width" constant="50" id="vyT-PM-PUp"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="boxShadowColor">
                                                             <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowRadius">
                                                             <real key="value" value="5"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="boxShadowOpacity">
                                                             <real key="value" value="1"/>
                                                         </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="point" keyPath="shadowOffset">
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="boxShadowOffset">
                                                             <point key="value" x="0.0" y="0.0"/>
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
