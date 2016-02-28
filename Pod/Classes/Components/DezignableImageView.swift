@@ -16,6 +16,30 @@ import UIKit
     }
   }
   
+  @IBInspectable public var backgroundGradientStartColor: UIColor? = nil {
+    didSet {
+      self.setupBackground()
+    }
+  }
+  
+  @IBInspectable public var backgroundGradientStopColor: UIColor? = nil {
+    didSet {
+      self.setupBackground()
+    }
+  }
+  
+  @IBInspectable public var backgroundGradientStartPoint: CGPoint = CGPoint.zero {
+    didSet {
+      self.setupBackground()
+    }
+  }
+  
+  @IBInspectable public var backgroundGradientStopPoint: CGPoint = CGPoint.zero {
+    didSet {
+      self.setupBackground()
+    }
+  }
+  
   @IBInspectable public var borderWidth: CGFloat = CGFloat.NaN {
     didSet {
       self.setupBorder()

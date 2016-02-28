@@ -49,10 +49,10 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 
 #### DezignableCorner
 
-| Property     | Description                                                                                                      | Preview            |
-|--------------|------------------------------------------------------------------------------------------------------------------|--------------------|
-| cornerRadius | The radius of all four corners, in points                                                                        | :white_check_mark: |
-| cornerCircle | Make a full circle based on the height of the view. The preview looks weird when used with `DezignableRotation`. | :white_check_mark: |
+| Property     | Description                                                                                                     | Preview            |
+|--------------|-----------------------------------------------------------------------------------------------------------------|--------------------|
+| cornerRadius | The radius of all four corners, in points                                                                       | :white_check_mark: |
+| cornerCircle | Make a full circle based on the height of the view. The preview looks weird when used with `DezignableRotation` | :white_check_mark: |
 
 #### DezignableRotation
 
@@ -60,6 +60,15 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 |----------|----------------------------------------------|---------|
 | rotation | The amount of degrees the view should rotate | :x:     |
 
+#### DezignableBackground
+
+| Property                     | Description                                 | Preview            |
+|------------------------------|---------------------------------------------|--------------------|
+| backgroundFillColor          | Fill the view with a solid color            | :white_check_mark: |
+| backgroundGradientStartColor | Start color of the gradient                 | :white_check_mark: |
+| backgroundGradientStopColor  | Stop color of the gradient                  | :white_check_mark: |
+| backgroundGradientStartPoint | Position of the start color in the gradient | :white_check_mark: |
+| backgroundGradientStopPoint  | Position of the stop color in the gradient  | :white_check_mark: |
 
 ## License
 

@@ -849,7 +849,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Circle" id="bj1-Ld-eWM">
+                            <tableViewSection headerTitle="Circle" footerTitle="When making a rectangle instead of a square, only the vertical sides are rounded." id="bj1-Ld-eWM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="09P-ua-fRp">
                                         <rect key="frame" x="0.0" y="238.5" width="600" height="75"/>
@@ -925,7 +925,7 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <sections>
-                            <tableViewSection headerTitle="Rotate" id="rew-Lx-Q2V">
+                            <tableViewSection headerTitle="Rotate" footerTitle="Rotation can not be previed in Interface Builder." id="rew-Lx-Q2V">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ftP-qT-4NB">
                                         <rect key="frame" x="0.0" y="113.5" width="600" height="75"/>
@@ -1031,6 +1031,76 @@
                                                 <constraint firstItem="YuB-Rt-h3w" firstAttribute="centerY" secondItem="9u4-HK-hkf" secondAttribute="centerY" id="rT5-DJ-3n3"/>
                                                 <constraint firstItem="3ez-Z0-bR6" firstAttribute="centerX" secondItem="9u4-HK-hkf" secondAttribute="centerX" constant="-30" id="sBe-yY-Qkj"/>
                                                 <constraint firstItem="3ez-Z0-bR6" firstAttribute="centerY" secondItem="9u4-HK-hkf" secondAttribute="centerY" id="sXw-Iy-N4A"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Gradient" footerTitle="You can configure the start and stop positions of the colors in Interface Builder's inspector." id="oKr-av-NSx">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bDV-f0-a5u">
+                                        <rect key="frame" x="0.0" y="303" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDV-f0-a5u" id="TCw-4R-0Mj">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcy-Hk-W2n" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="3ik-G6-B7m"/>
+                                                        <constraint firstAttribute="height" constant="50" id="bb3-Op-vzf"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
+                                                            <color key="value" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
+                                                            <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="lcy-Hk-W2n" firstAttribute="centerY" secondItem="TCw-4R-0Mj" secondAttribute="centerY" id="QGY-bX-87e"/>
+                                                <constraint firstItem="lcy-Hk-W2n" firstAttribute="centerX" secondItem="TCw-4R-0Mj" secondAttribute="centerX" id="SKz-fg-lO6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JxG-k9-ami">
+                                        <rect key="frame" x="0.0" y="378" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JxG-k9-ami" id="hTD-lI-Vl6">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2J-pE-JZz" customClass="DezignableView" customModule="Dezignables">
+                                                    <rect key="frame" x="275" y="12" width="50" height="50"/>
+                                                    <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="Fjy-uE-pHg"/>
+                                                        <constraint firstAttribute="height" constant="50" id="X4C-8f-GKf"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStartColor">
+                                                            <color key="value" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundGradientStopColor">
+                                                            <color key="value" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStartPoint">
+                                                            <point key="value" x="1" y="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="point" keyPath="backgroundGradientStopPoint">
+                                                            <point key="value" x="0.0" y="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="P2J-pE-JZz" firstAttribute="centerY" secondItem="hTD-lI-Vl6" secondAttribute="centerY" id="MWD-Ks-web"/>
+                                                <constraint firstItem="P2J-pE-JZz" firstAttribute="centerX" secondItem="hTD-lI-Vl6" secondAttribute="centerX" id="ftZ-XB-UzR"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
