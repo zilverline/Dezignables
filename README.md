@@ -25,26 +25,27 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 
 ### Components
 
-| Class               | Dezignables                                                                                                                            |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| DezignableView      | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
-| DezignableButton    | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
-| DezignableImageView | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
-| DezignableLabel     | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>|
+| Class                         | Dezignables                                                                                                                                                                                                                                                                                                                                                         |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DezignableView                | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>                                                                                                                                                                                                                             |
+| DezignableButton              | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>                                                                                                                                                                                                                             |
+| DezignableImageView           | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>                                                                                                                                                                                                                             |
+| DezignableLabel               | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>                                                                                                                                                                                                                             |
+| DezignableTableViewController | <ul><li>Fixes an issue with the swipe-back-gesture. When swiping back really fast to a table view controller, the selection of the cell would not be cleared. This component fixes this issue.</li><li>Can be used with static tables, designed in Interface Builder.<li>DezignableSeparator</li><li>DezignableHighlight</li><li>DezignableHiddenSections</li></ul> |
 
 ### Dezignables
 
 #### DezignableBorder
 
-| Property              | Description                                                                                                                                                                                           | Preview            |
-|-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| borderWidth           | Sets the width of the border in points                                                                                                                                                                | :white_check_mark: |
-| borderColor           | Color of the border                                                                                                                                                                                   | :white_check_mark: |
-| borderTop             | Draws top border                                                                                                                                                                                      | :white_check_mark: |
-| borderBottom          | Draws bottom border                                                                                                                                                                                   | :white_check_mark: |
-| borderLeft            | Draws left border                                                                                                                                                                                     | :white_check_mark: |
-| borderRight           | Draws right border                                                                                                                                                                                    | :white_check_mark: |
-| borderScaleCorrection | Converts the borderWidth to physical pixels. The borderWidth value gets divided by `UIScreen.mainScreen().scale`. To create a hairline border use `borderWidth=1.0` and `borderScaleCorrection=true`. | :white_check_mark: |
+| Property              | Description                                                                                                                                                                                               | Preview            |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
+| borderWidth           | Sets the width of the border in points                                                                                                                                                                    | :white_check_mark: |
+| borderColor           | Color of the border                                                                                                                                                                                       | :white_check_mark: |
+| borderTop             | Draws top border                                                                                                                                                                                          | :white_check_mark: |
+| borderBottom          | Draws bottom border                                                                                                                                                                                       | :white_check_mark: |
+| borderLeft            | Draws left border                                                                                                                                                                                         | :white_check_mark: |
+| borderRight           | Draws right border                                                                                                                                                                                        | :white_check_mark: |
+| borderScaleCorrection | Converts the `borderWidth` to physical pixels. The `borderWidth` value gets divided by `UIScreen.mainScreen().scale`. To create a hairline border use `borderWidth=1.0` and `borderScaleCorrection=true`. | :white_check_mark: |
 
 #### DezignableCorner
 
@@ -79,6 +80,35 @@ When you want to use `DezignableShadow` together with `DezignableBorder` you'll 
 | boxShadowRadius  | How far out the shadow will spread                                         | :x:     |
 | boxShadowOpacity | How transparant the shadow will be. 0.0 is invisible, 1.0 is fully visible | :x:     |
 | boxShadowOffset  | From what point the shadow will draw                                       | :x:     |
+
+#### DezignableSeparator
+
+This is a table cell separator that doesn't dissapear when selecting the cell. Cells need to be a subclass of `DezignableTableViewCell`, or you can use `DezignableTableViewCell` directly.
+
+| Property                 | Description                                                                                                                                                                                                        | Preview |
+|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| separatorColor           | The color of the separator                                                                                                                                                                                         | :x:     |
+| separatorWidth           | The width of the separator, in points                                                                                                                                                                              | :x:     |
+| separatorScaleCorrection | Converts the `separatorWidth` to physical pixels. The `separatorWidth` value gets divided by `UIScreen.mainScreen().scale`. To create a hairline border use `separatorWidth=1.0` and `borderScaleCorrection=true`. | :x:     |
+
+#### DezignableHiddenSections
+
+These functions can be called from a subclass of `DezignableTableViewController` or directly on the controller.
+
+| Function                              | Description                                                               | Preview |
+|---------------------------------------|---------------------------------------------------------------------------|---------|
+| hideSection(section: Int)             | Hides the given section (section index is zero-based)                     | :x:     |
+| showSection(section: Int)             | Shows the given section (section index is zero-based)                     | :x:     |
+| isSectionHidden(section: Int) -> Bool | Returns `true` when given section is hidden (section index is zero-based) | :x:     |
+
+#### DezignableHighlight
+
+A custom highlight and selection color for table cells. Cells need to be a subclass of `DezignableTableViewCell` or you can use `DezignableTableViewCell` directly.
+
+| Property                | Description                                                                  | Preview |
+|-------------------------|------------------------------------------------------------------------------|---------|
+| selectedBackgroundColor | The color used when the cell is highlighted or selected                      | :x:     |
+| normalBackgroundColor   | The default background color of the cell, defaults to `UIColor.whiteColor()` | :x:     |
 
 ## License
 
