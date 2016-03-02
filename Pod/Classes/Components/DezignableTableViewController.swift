@@ -8,12 +8,15 @@
 
 import UIKit
 
-@IBDesignable public class DezignableTableViewController: UITableViewController, DezignableSeparator, DezignableHiddenSections, DezignableHighlight {
-  @IBInspectable var separatorColor: UIColor? = nil
-  @IBInspectable var separatorWidth: CGFloat = CGFloat.NaN
-  @IBInspectable var separatorScaleCorrection: Bool = false
-  @IBInspectable var selectedBackgroundColor: UIColor? = nil
-  @IBInspectable var normalBackgroundColor: UIColor? = nil
+@IBDesignable public class DezignableTableViewController: UITableViewController, DezignableSeparator, DezignableHiddenSections, DezignableHighlight, DezignableStatusBar, DezignableHiddenNavigationBar {
+  @IBInspectable public var separatorColor: UIColor? = nil
+  @IBInspectable public var separatorWidth: CGFloat = CGFloat.NaN
+  @IBInspectable public var separatorScaleCorrection: Bool = false
+  @IBInspectable public var selectedBackgroundColor: UIColor? = nil
+  @IBInspectable public var normalBackgroundColor: UIColor? = nil
+  @IBInspectable public var navigationBarHidden: Bool = false
+  @IBInspectable public var statusBarLight: Bool = false
+  @IBInspectable public var statusBarHidden: Bool = false
   
   private var hiddenSections = [Int]()
   private var savedSelectedIndexPath: NSIndexPath?
@@ -26,6 +29,14 @@ import UIKit
     self.clearsSelectionOnViewWillAppear = false
   }
   
+  override public func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return self.statusBarLight ? .LightContent : .Default
+  }
+  
+  override public func prefersStatusBarHidden() -> Bool {
+    return self.statusBarHidden
+  }
+  
   override public func viewDidAppear(animated: Bool) {
     super.viewDidAppear(animated)
     self.savedSelectedIndexPath = nil
@@ -36,6 +47,7 @@ import UIKit
     if let indexPath = self.savedSelectedIndexPath {
       self.tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: .None)
     }
+    self.resetHiddenNavigationBar()
   }
   
   override public func viewWillAppear(animated: Bool) {
@@ -44,6 +56,7 @@ import UIKit
     if let indexPath = self.savedSelectedIndexPath {
       self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
+    self.setupHiddenNavigationBar()
   }
   
   public func hideSection(section: Int) {
