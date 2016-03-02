@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.3.0 - master
+## 1.4.0 - master
+
+## 1.3.0 - 2 Mar 2016
+- Added `DezignableViewController`
+- Added `DezignableHiddenNavigationBar`
+- Added `DezignableStatusBar`
+- Added `DezignableHighlight` to `DezignableButton`
 
 ## 1.2.0 - 1 Mar 2016
 - Added `cornerCircle` to create a full circle based on the height of the view
