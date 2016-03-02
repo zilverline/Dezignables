@@ -104,12 +104,13 @@ These functions can be called from a subclass of `DezignableTableViewController`
 
 #### DezignableHighlight
 
-A custom highlight and selection color for table cells. Cells need to be a subclass of `DezignableTableViewCell` or you can use `DezignableTableViewCell` directly.
+A custom highlight and selection background color for table cells and buttons. Cells need to be a subclass of `DezignableTableViewCell` or you can use `DezignableTableViewCell` directly.
 
-| Property                | Description                                                                  | Preview |
-|-------------------------|------------------------------------------------------------------------------|---------|
-| selectedBackgroundColor | The color used when the cell is highlighted or selected                      | :x:     |
-| normalBackgroundColor   | The default background color of the cell, defaults to `UIColor.whiteColor()` | :x:     |
+| Property                 | Description                                                                                                         | Preview                                |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------|----------------------------------------|
+| selectedBackgroundColor  | The color used when the cell is selected                                                                            | Cell: :x: - Button: :white_check_mark: |
+| highlightBackgroundColor | The color used when the cell is highlighted, for cells the `selectedBackgroundColor` is used when this value is nil | Cell: :x: - Button: :white_check_mark: |
+| normalBackgroundColor    | The default background color of the cell, defaults to `UIColor.whiteColor()`                                        | Cell: :x: - Button: :white_check_mark: |
 
 #### DezignableHiddenNavigationBar
 
