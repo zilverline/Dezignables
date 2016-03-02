@@ -1155,7 +1155,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderScaleCorrection" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-vi-gNp" customClass="DezignableButton" customModule="Dezignables">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5L-vi-gNp" customClass="DezignableButton" customModule="Dezignables">
                                 <rect key="frame" x="200" y="225" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1177,6 +1177,12 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderBottom" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="borderRight" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="cornerCircle" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightBackgroundColor">
+                                        <color key="value" red="0.6705882353" green="0.90980392160000001" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" red="0.92941176469999998" green="0.1450980392" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="tapButton:" destination="8hx-ja-Em4" eventType="touchUpInside" id="BcK-QT-WJr"/>

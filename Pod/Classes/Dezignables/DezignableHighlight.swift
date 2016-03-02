@@ -10,5 +10,6 @@ import Foundation
 
 protocol DezignableHighlight {
   var selectedBackgroundColor: UIColor? { get set }
+  var highlightBackgroundColor: UIColor? { get set }
   var normalBackgroundColor: UIColor? { get set }
 }

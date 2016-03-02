@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable public class DezignableButton: UIButton, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground, DezignableShadow {
+@IBDesignable public class DezignableButton: UIButton, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground, DezignableShadow, DezignableHighlight {
   
   @IBInspectable public var backgroundFillColor: UIColor? = nil {
     didSet {
@@ -124,11 +124,48 @@ import UIKit
     }
   }
   
+  @IBInspectable public var selectedBackgroundColor: UIColor? = nil {
+    didSet {
+      self.backgroundColor = self.selected ? self.selectedBackgroundColor : super.backgroundColor
+    }
+  }
+  
+  @IBInspectable public var highlightBackgroundColor: UIColor? = nil {
+    didSet {
+      self.backgroundColor = self.highlighted ? self.highlightBackgroundColor : super.backgroundColor
+    }
+  }
+  
+  @IBInspectable public var normalBackgroundColor: UIColor? = nil
+  
+  override public var selected: Bool {
+    get {
+      return super.selected
+    }
+    set {
+      if let selectedBackgroundColor = self.selectedBackgroundColor {
+        self.backgroundColor = newValue ? selectedBackgroundColor : self.normalBackgroundColor
+      }
+      super.selected = newValue
+    }
+  }
+  
+  override public var highlighted: Bool {
+    get {
+      return super.highlighted
+    }
+    set {
+      if let highlightBackgroundColor = self.highlightBackgroundColor {
+        self.backgroundColor = newValue ? highlightBackgroundColor : normalBackgroundColor
+      }
+      super.highlighted = newValue
+    }
+  }
+  
   public override func layoutSubviews() {
     super.layoutSubviews()
     self.setupBackground()
     self.setupBorder()
     self.setupCorner()
   }
-  
 }

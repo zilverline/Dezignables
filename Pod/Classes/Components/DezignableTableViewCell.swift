@@ -10,6 +10,7 @@ import UIKit
 
 public class DezignableTableViewCell: UITableViewCell {
   var selectedBackgroundColor: UIColor? = nil
+  var highlightBackgroundColor: UIColor? = nil
   var normalBackgroundColor: UIColor? = nil
   var borderTopLayer: CALayer?
   var borderBottomLayer: CALayer?
@@ -127,7 +128,7 @@ public class DezignableTableViewCell: UITableViewCell {
   
   override public func setHighlighted(highlighted: Bool, animated: Bool) {
     if self.selectionStyle != .None {
-      if let color = self.selectedBackgroundColor {
+      if let color = self.highlightBackgroundColor {
         self.backgroundColor = highlighted ? color : (self.normalBackgroundColor ?? UIColor.whiteColor())
       }
       
