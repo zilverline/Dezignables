@@ -15,7 +15,7 @@ public protocol DezignableHiddenNavigationBar {
 public extension DezignableHiddenNavigationBar where Self: UIViewController {
   public func setupHiddenNavigationBar() {
     self.navigationController?.navigationBarHidden = self.navigationBarHidden
-    self.automaticallyAdjustsScrollViewInsets = false
+    self.automaticallyAdjustsScrollViewInsets = !self.navigationBarHidden
   }
   
   public func resetHiddenNavigationBar() {
