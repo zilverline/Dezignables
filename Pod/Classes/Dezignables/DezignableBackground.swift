@@ -18,7 +18,7 @@ public protocol DezignableBackground {
 
 public extension DezignableBackground where Self: UIView {
   public func setupBackground() {
-    self.removeExistingBackgroundLayer()
+    self.removeExistingBackgroundView()
     
     if self.backgroundFillColor != nil {
       self.createBackgroundFillLayer()
@@ -27,24 +27,27 @@ public extension DezignableBackground where Self: UIView {
     }
   }
   
-  private func removeExistingBackgroundLayer() {
-    self.layer.sublayers?.forEach({ layer in
-      if layer.name == "dezignableBackgroundLayer" {
-        layer.removeFromSuperlayer()
+  private func removeExistingBackgroundView() {
+    self.subviews.forEach({ subview in
+      if subview is BackgroundView {
+        subview.removeFromSuperview()
       }
     })
   }
   
   private func createBackgroundFillLayer() {
+    let view = BackgroundView(frame: self.bounds)
     let backgroundLayer = CALayer()
     backgroundLayer.name = "dezignableBackgroundLayer"
     backgroundLayer.frame = self.bounds
     backgroundLayer.cornerRadius = self.layer.cornerRadius
     backgroundLayer.backgroundColor = self.backgroundFillColor!.CGColor
-    self.layer.addSublayer(backgroundLayer)
+    view.layer.addSublayer(backgroundLayer)
+    self.insertSubview(view, atIndex: 0)
   }
   
   private func createBackgroundGradientLayer() {
+    let view = BackgroundView(frame: self.bounds)
     let backgroundLayer = CAGradientLayer()
     backgroundLayer.name = "dezignableBackgroundLayer"
     backgroundLayer.frame = self.bounds
@@ -52,6 +55,11 @@ public extension DezignableBackground where Self: UIView {
     backgroundLayer.colors = [self.backgroundGradientStartColor!.CGColor, self.backgroundGradientStopColor!.CGColor]
     backgroundLayer.startPoint = self.backgroundGradientStartPoint
     backgroundLayer.endPoint = self.backgroundGradientStopPoint
-    self.layer.addSublayer(backgroundLayer)
+    view.layer.addSublayer(backgroundLayer)
+    self.insertSubview(view, atIndex: 0)
   }
+}
+
+private class BackgroundView: UIView {
+  
 }
