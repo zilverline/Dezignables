@@ -32,6 +32,7 @@ Dezignables are implemented using protocol extensions. The pre-made components i
 | DezignableImageView           | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>                                                                                                                                                                                                                             |
 | DezignableLabel               | <ul><li>DezignableBorder</li><li>DezignableCorner</li><li>DezignableRotation</li><li>DezignableBackground</li><li>DezignableShadow</li>                                                                                                                                                                                                                             |
 | DezignableTableViewController | <ul><li>Fixes an issue with the swipe-back-gesture. When swiping back really fast to a table view controller, the selection of the cell would not be cleared. This component fixes this issue.</li><li>Can be used with static tables, designed in Interface Builder.<li>DezignableSeparator</li><li>DezignableHighlight</li><li>DezignableHiddenSections</li></ul> |
+| DezignableViewController      | <ul><li>DezignableHiddenNavigationBar</li><li>DezignableStatusBar</li></ul>                                                                                                                                                                                                                                                                                         |
 
 ### Dezignables
 
@@ -109,6 +110,19 @@ A custom highlight and selection color for table cells. Cells need to be a subcl
 |-------------------------|------------------------------------------------------------------------------|---------|
 | selectedBackgroundColor | The color used when the cell is highlighted or selected                      | :x:     |
 | normalBackgroundColor   | The default background color of the cell, defaults to `UIColor.whiteColor()` | :x:     |
+
+#### DezignableHiddenNavigationBar
+
+| Property            | Description                                                          | Preview |
+|---------------------|----------------------------------------------------------------------|---------|
+| navigationBarHidden | Whether or not the navigation bar is hidden for this view controller | :x:     |
+
+#### DezignableStatusBar
+
+| Property        | Description                                                      | Preview |
+|-----------------|------------------------------------------------------------------|---------|
+| statusBarLight  | Shows a light status bar for this view controller                | :x:     |
+| statusBarHidden | Whether or not the status bar is hidden for this view controller | :x:     |
 
 ## License
 
