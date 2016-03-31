@@ -7,6 +7,7 @@
 //
 
 import Dezignables
+import UIKit
 
 class PrototypeTableViewController: DezignableTableViewController {
 
