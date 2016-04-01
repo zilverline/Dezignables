@@ -10,4 +10,4 @@ env:
     - NAME='iPhone 6s'
     - NAME='iPhone 6s Plus'
 script:
-- set -o pipefail && xcodebuild test -workspace Example/Dezignables.xcworkspace -scheme Dezignables-Example -destination "platform=iOS Simulator,name=$NAME" ONLY_ACTIVE_ARCH=NO | xcpretty
+- set -o pipefail && xcodebuild test -project Example/Dezignables.xcodeproj -scheme Dezignables-Example -destination "platform=iOS Simulator,name=$NAME" ONLY_ACTIVE_ARCH=NO | xcpretty
