@@ -11,7 +11,7 @@ import XCTest
 import FBSnapshotTestCase
 import Dezignables
 
-class Base: FBSnapshotTestCase {
+class BaseTestCase: FBSnapshotTestCase {
 
   var subject: DezignableView!
   var containerView: UIView!

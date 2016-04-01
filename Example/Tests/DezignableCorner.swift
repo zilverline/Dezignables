@@ -2,7 +2,7 @@ import UIKit
 import XCTest
 import Dezignables
 
-class DezignableCornerTests: Base {
+class DezignableCornerTests: BaseTestCase {
   
   func testCorner() {
     self.subject.cornerRadius = 20.0

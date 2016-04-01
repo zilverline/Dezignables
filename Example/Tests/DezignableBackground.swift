@@ -1,8 +1,9 @@
 import UIKit
 import XCTest
+import FBSnapshotTestCase
 import Dezignables
 
-class DezignableBackgroundTests: Base {
+class DezignableBackgroundTests: BaseTestCase {
   
   func testBackgroundFillColor() {
     self.subject.backgroundFillColor = UIColor.greenColor()

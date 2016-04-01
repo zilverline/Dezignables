@@ -2,7 +2,7 @@ import UIKit
 import XCTest
 import Dezignables
 
-class DezignableShadowTests: Base {
+class DezignableShadowTests: BaseTestCase {
   
   func testShadow() {
     self.subject.boxShadowColor = UIColor.blackColor()
