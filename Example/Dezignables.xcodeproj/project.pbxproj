@@ -15,12 +15,17 @@
 		607FACEC1AFB9204008FA782 /* DezignableBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* DezignableBorder.swift */; };
 		654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913941C80A60D0098AE5F /* DezignableRotation.swift */; };
 		654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913931C80A60D0098AE5F /* DezignableCorner.swift */; };
-		6549139B1C80A6B30098AE5F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* Base.swift */; };
+		6549139B1C80A6B30098AE5F /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* BaseTestCase.swift */; };
 		65685FD91C837532008F5D9A /* DezignableBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65685FD71C837517008F5D9A /* DezignableBackground.swift */; };
 		65685FDE1C837EE8008F5D9A /* DezignableShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65685FDC1C837EC8008F5D9A /* DezignableShadow.swift */; };
 		65CC69641C84735000327A4B /* HideSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC69631C84735000327A4B /* HideSectionTableViewController.swift */; };
 		65CC69661C8477B300327A4B /* PrototypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC69651C8477B300327A4B /* PrototypeTableViewController.swift */; };
 		65CC696B1C84781300327A4B /* PrototypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC696A1C84781300327A4B /* PrototypeTableViewCell.swift */; };
+		CC0C90771CAE9B6A00EF445E /* Dezignables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; };
+		CC0C90781CAE9B6A00EF445E /* Dezignables.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC0C907B1CAE9BC900EF445E /* Dezignables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; };
+		CC0C907D1CAE9BF500EF445E /* Dezignables.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC0C907E1CAE9C1500EF445E /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC11C8FE1CADC1F300922003 /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CC11C8FF1CADC1F300922003 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C8FE1CADC1F300922003 /* FBSnapshotTestCase.framework */; };
 		CC11C9161CADC2B100922003 /* DezignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C90F1CADC2B100922003 /* DezignableButton.swift */; };
 		CC11C9171CADC2B100922003 /* DezignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9101CADC2B100922003 /* DezignableImageView.swift */; };
@@ -58,6 +63,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CC0C90791CAE9B6A00EF445E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC0C90781CAE9B6A00EF445E /* Dezignables.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0C907C1CAE9BEA00EF445E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC0C907E1CAE9C1500EF445E /* FBSnapshotTestCase.framework in CopyFiles */,
+				CC0C907D1CAE9BF500EF445E /* Dezignables.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		607FACD01AFB9204008FA782 /* Dezignables_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dezignables_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -71,7 +101,7 @@
 		607FACEB1AFB9204008FA782 /* DezignableBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DezignableBorder.swift; sourceTree = "<group>"; };
 		654913931C80A60D0098AE5F /* DezignableCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableCorner.swift; sourceTree = "<group>"; };
 		654913941C80A60D0098AE5F /* DezignableRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableRotation.swift; sourceTree = "<group>"; };
-		654913991C80A6980098AE5F /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		654913991C80A6980098AE5F /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		65685FD71C837517008F5D9A /* DezignableBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableBackground.swift; sourceTree = "<group>"; };
 		65685FDC1C837EC8008F5D9A /* DezignableShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableShadow.swift; sourceTree = "<group>"; };
 		65A6C9501C81F8EE00E0E57D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
@@ -108,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0C90771CAE9B6A00EF445E /* Dezignables.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC0C907B1CAE9BC900EF445E /* Dezignables.framework in Frameworks */,
 				CC11C8FF1CADC1F300922003 /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,7 +207,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				654913991C80A6980098AE5F /* Base.swift */,
+				654913991C80A6980098AE5F /* BaseTestCase.swift */,
 				65685FD71C837517008F5D9A /* DezignableBackground.swift */,
 				607FACEB1AFB9204008FA782 /* DezignableBorder.swift */,
 				654913931C80A60D0098AE5F /* DezignableCorner.swift */,
@@ -302,6 +334,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
+				CC0C90791CAE9B6A00EF445E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -320,6 +353,7 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				CC0C907C1CAE9BEA00EF445E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -436,7 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65685FDE1C837EE8008F5D9A /* DezignableShadow.swift in Sources */,
-				6549139B1C80A6B30098AE5F /* Base.swift in Sources */,
+				6549139B1C80A6B30098AE5F /* BaseTestCase.swift in Sources */,
 				654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */,
 				65685FD91C837532008F5D9A /* DezignableBackground.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* DezignableBorder.swift in Sources */,
@@ -589,6 +623,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Dezignables/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -602,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Dezignables/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -726,6 +762,7 @@
 				CC11C90D1CADC27A00922003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
