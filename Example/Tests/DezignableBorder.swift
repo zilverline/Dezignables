@@ -2,7 +2,7 @@ import UIKit
 import XCTest
 import Dezignables
 
-class DezignableBorderTests: Base {
+class DezignableBorderTests: BaseTestCase {
   
   func testCombination() {
     self.subject.borderWidth = 5.0
