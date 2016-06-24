@@ -123,6 +123,7 @@ import UIKit
     cell.selectedBackgroundColor = self.selectedBackgroundColor
     cell.normalBackgroundColor = self.normalBackgroundColor
     cell.highlightBackgroundColor = self.highlightBackgroundColor ?? self.selectedBackgroundColor
+    cell.backgroundColor = cell.backgroundColor // fixes weird bug on iPad, where the background would stay white
     
     if self.separatorColor != nil && !self.separatorWidth.isNaN && self.separatorWidth > 0 {
       cell.borderTop = indexPath.row == 0 && self.tableView.style != .Plain
