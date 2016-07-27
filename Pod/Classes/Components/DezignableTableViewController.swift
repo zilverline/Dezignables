@@ -76,7 +76,7 @@ import UIKit
     if self.isSectionHidden(section) {
       return 0.1
     } else {
-      return super.tableView(tableView, heightForHeaderInSection: section)
+      return super.tableView(tableView, heightForFooterInSection: section)
     }
   }
   
