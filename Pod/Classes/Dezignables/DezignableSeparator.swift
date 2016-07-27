@@ -6,6 +6,8 @@
 //
 //
 
+import UIKit
+
 protocol DezignableSeparator {
   var separatorColor: UIColor? { get set }
   var separatorWidth: CGFloat { get set }

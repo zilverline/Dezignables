@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B57AFAAE2F3136F32206F30 /* Pods_Dezignables_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7590EA8C7F9D4DFAFA9B64ED /* Pods_Dezignables_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -16,13 +15,35 @@
 		607FACEC1AFB9204008FA782 /* DezignableBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* DezignableBorder.swift */; };
 		654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913941C80A60D0098AE5F /* DezignableRotation.swift */; };
 		654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913931C80A60D0098AE5F /* DezignableCorner.swift */; };
-		6549139B1C80A6B30098AE5F /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* Base.swift */; };
+		6549139B1C80A6B30098AE5F /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654913991C80A6980098AE5F /* BaseTestCase.swift */; };
 		65685FD91C837532008F5D9A /* DezignableBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65685FD71C837517008F5D9A /* DezignableBackground.swift */; };
 		65685FDE1C837EE8008F5D9A /* DezignableShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65685FDC1C837EC8008F5D9A /* DezignableShadow.swift */; };
 		65CC69641C84735000327A4B /* HideSectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC69631C84735000327A4B /* HideSectionTableViewController.swift */; };
 		65CC69661C8477B300327A4B /* PrototypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC69651C8477B300327A4B /* PrototypeTableViewController.swift */; };
 		65CC696B1C84781300327A4B /* PrototypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC696A1C84781300327A4B /* PrototypeTableViewCell.swift */; };
-		9005A62E3A2E4356E082EDFC /* Pods_Dezignables_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E163D366E341C81E7816E8B3 /* Pods_Dezignables_Tests.framework */; };
+		CC0C90771CAE9B6A00EF445E /* Dezignables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; };
+		CC0C90781CAE9B6A00EF445E /* Dezignables.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC0C907B1CAE9BC900EF445E /* Dezignables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; };
+		CC0C907D1CAE9BF500EF445E /* Dezignables.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC11C9061CADC27A00922003 /* Dezignables.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC0C907E1CAE9C1500EF445E /* FBSnapshotTestCase.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = CC11C8FE1CADC1F300922003 /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC11C8FF1CADC1F300922003 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC11C8FE1CADC1F300922003 /* FBSnapshotTestCase.framework */; };
+		CC11C9161CADC2B100922003 /* DezignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C90F1CADC2B100922003 /* DezignableButton.swift */; };
+		CC11C9171CADC2B100922003 /* DezignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9101CADC2B100922003 /* DezignableImageView.swift */; };
+		CC11C9181CADC2B100922003 /* DezignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9111CADC2B100922003 /* DezignableLabel.swift */; };
+		CC11C9191CADC2B100922003 /* DezignableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9121CADC2B100922003 /* DezignableTableViewCell.swift */; };
+		CC11C91A1CADC2B100922003 /* DezignableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9131CADC2B100922003 /* DezignableTableViewController.swift */; };
+		CC11C91B1CADC2B100922003 /* DezignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9141CADC2B100922003 /* DezignableView.swift */; };
+		CC11C91C1CADC2B100922003 /* DezignableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9151CADC2B100922003 /* DezignableViewController.swift */; };
+		CC11C9271CADC2C600922003 /* DezignableBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C91D1CADC2C600922003 /* DezignableBackground.swift */; };
+		CC11C9281CADC2C600922003 /* DezignableBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C91E1CADC2C600922003 /* DezignableBorder.swift */; };
+		CC11C9291CADC2C600922003 /* DezignableCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C91F1CADC2C600922003 /* DezignableCorner.swift */; };
+		CC11C92A1CADC2C600922003 /* DezignableHiddenNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9201CADC2C600922003 /* DezignableHiddenNavigationBar.swift */; };
+		CC11C92B1CADC2C600922003 /* DezignableHiddenSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9211CADC2C600922003 /* DezignableHiddenSections.swift */; };
+		CC11C92C1CADC2C600922003 /* DezignableHighlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9221CADC2C600922003 /* DezignableHighlight.swift */; };
+		CC11C92D1CADC2C600922003 /* DezignableRotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9231CADC2C600922003 /* DezignableRotation.swift */; };
+		CC11C92E1CADC2C600922003 /* DezignableSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9241CADC2C600922003 /* DezignableSeparator.swift */; };
+		CC11C92F1CADC2C600922003 /* DezignableShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9251CADC2C600922003 /* DezignableShadow.swift */; };
+		CC11C9301CADC2C600922003 /* DezignableStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC11C9261CADC2C600922003 /* DezignableStatusBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,10 +54,41 @@
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = Dezignables;
 		};
+		CC11C9321CADC30300922003 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC11C9051CADC27A00922003;
+			remoteInfo = Dezignables;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CC0C90791CAE9B6A00EF445E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC0C90781CAE9B6A00EF445E /* Dezignables.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0C907C1CAE9BEA00EF445E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CC0C907E1CAE9C1500EF445E /* FBSnapshotTestCase.framework in CopyFiles */,
+				CC0C907D1CAE9BF500EF445E /* Dezignables.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1704FA10B467A9BC81E528D9 /* Pods-Dezignables_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Example/Pods-Dezignables_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Dezignables_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dezignables_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,20 +101,35 @@
 		607FACEB1AFB9204008FA782 /* DezignableBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DezignableBorder.swift; sourceTree = "<group>"; };
 		654913931C80A60D0098AE5F /* DezignableCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableCorner.swift; sourceTree = "<group>"; };
 		654913941C80A60D0098AE5F /* DezignableRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableRotation.swift; sourceTree = "<group>"; };
-		654913991C80A6980098AE5F /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		654913991C80A6980098AE5F /* BaseTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		65685FD71C837517008F5D9A /* DezignableBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableBackground.swift; sourceTree = "<group>"; };
 		65685FDC1C837EC8008F5D9A /* DezignableShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DezignableShadow.swift; sourceTree = "<group>"; };
 		65A6C9501C81F8EE00E0E57D /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 		65CC69631C84735000327A4B /* HideSectionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HideSectionTableViewController.swift; sourceTree = "<group>"; };
 		65CC69651C8477B300327A4B /* PrototypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeTableViewController.swift; sourceTree = "<group>"; };
 		65CC696A1C84781300327A4B /* PrototypeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeTableViewCell.swift; sourceTree = "<group>"; };
-		7590EA8C7F9D4DFAFA9B64ED /* Pods_Dezignables_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dezignables_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		760B07189BA5E82E4D45F9CF /* Pods-Dezignables_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Tests/Pods-Dezignables_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8CAC5626EFBAE56B1D6CCDF5 /* Pods-Dezignables_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Example/Pods-Dezignables_Example.release.xcconfig"; sourceTree = "<group>"; };
-		CCCB2B04A70B963EA344E016 /* Pods-Dezignables_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dezignables_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dezignables_Tests/Pods-Dezignables_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CC11C8FE1CADC1F300922003 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		CC11C9061CADC27A00922003 /* Dezignables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dezignables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC11C90A1CADC27A00922003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC11C90F1CADC2B100922003 /* DezignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableButton.swift; path = ../../Pod/Classes/Components/DezignableButton.swift; sourceTree = "<group>"; };
+		CC11C9101CADC2B100922003 /* DezignableImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableImageView.swift; path = ../../Pod/Classes/Components/DezignableImageView.swift; sourceTree = "<group>"; };
+		CC11C9111CADC2B100922003 /* DezignableLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableLabel.swift; path = ../../Pod/Classes/Components/DezignableLabel.swift; sourceTree = "<group>"; };
+		CC11C9121CADC2B100922003 /* DezignableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableTableViewCell.swift; path = ../../Pod/Classes/Components/DezignableTableViewCell.swift; sourceTree = "<group>"; };
+		CC11C9131CADC2B100922003 /* DezignableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableTableViewController.swift; path = ../../Pod/Classes/Components/DezignableTableViewController.swift; sourceTree = "<group>"; };
+		CC11C9141CADC2B100922003 /* DezignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableView.swift; path = ../../Pod/Classes/Components/DezignableView.swift; sourceTree = "<group>"; };
+		CC11C9151CADC2B100922003 /* DezignableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableViewController.swift; path = ../../Pod/Classes/Components/DezignableViewController.swift; sourceTree = "<group>"; };
+		CC11C91D1CADC2C600922003 /* DezignableBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableBackground.swift; path = ../../Pod/Classes/Dezignables/DezignableBackground.swift; sourceTree = "<group>"; };
+		CC11C91E1CADC2C600922003 /* DezignableBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableBorder.swift; path = ../../Pod/Classes/Dezignables/DezignableBorder.swift; sourceTree = "<group>"; };
+		CC11C91F1CADC2C600922003 /* DezignableCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableCorner.swift; path = ../../Pod/Classes/Dezignables/DezignableCorner.swift; sourceTree = "<group>"; };
+		CC11C9201CADC2C600922003 /* DezignableHiddenNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableHiddenNavigationBar.swift; path = ../../Pod/Classes/Dezignables/DezignableHiddenNavigationBar.swift; sourceTree = "<group>"; };
+		CC11C9211CADC2C600922003 /* DezignableHiddenSections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableHiddenSections.swift; path = ../../Pod/Classes/Dezignables/DezignableHiddenSections.swift; sourceTree = "<group>"; };
+		CC11C9221CADC2C600922003 /* DezignableHighlight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableHighlight.swift; path = ../../Pod/Classes/Dezignables/DezignableHighlight.swift; sourceTree = "<group>"; };
+		CC11C9231CADC2C600922003 /* DezignableRotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableRotation.swift; path = ../../Pod/Classes/Dezignables/DezignableRotation.swift; sourceTree = "<group>"; };
+		CC11C9241CADC2C600922003 /* DezignableSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableSeparator.swift; path = ../../Pod/Classes/Dezignables/DezignableSeparator.swift; sourceTree = "<group>"; };
+		CC11C9251CADC2C600922003 /* DezignableShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableShadow.swift; path = ../../Pod/Classes/Dezignables/DezignableShadow.swift; sourceTree = "<group>"; };
+		CC11C9261CADC2C600922003 /* DezignableStatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DezignableStatusBar.swift; path = ../../Pod/Classes/Dezignables/DezignableStatusBar.swift; sourceTree = "<group>"; };
 		D3B265E3B9A5AE7BC9FD183E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DBD5301C91D4C50D86DE15CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E163D366E341C81E7816E8B3 /* Pods_Dezignables_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dezignables_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F633B3D7FAA29C6C5F30469D /* Dezignables.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Dezignables.podspec; path = ../Dezignables.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B57AFAAE2F3136F32206F30 /* Pods_Dezignables_Example.framework in Frameworks */,
+				CC0C90771CAE9B6A00EF445E /* Dezignables.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,31 +146,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9005A62E3A2E4356E082EDFC /* Pods_Dezignables_Tests.framework in Frameworks */,
+				CC0C907B1CAE9BC900EF445E /* Dezignables.framework in Frameworks */,
+				CC11C8FF1CADC1F300922003 /* FBSnapshotTestCase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC11C9021CADC27A00922003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24E3F2BE47445BBF929E94D8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7590EA8C7F9D4DFAFA9B64ED /* Pods_Dezignables_Example.framework */,
-				E163D366E341C81E7816E8B3 /* Pods_Dezignables_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for Dezignables */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				CC11C9071CADC27A00922003 /* Dezignables */,
+				CC11C9001CADC20D00922003 /* Frameworks */,
 				607FACD11AFB9204008FA782 /* Products */,
-				F4885E931FB4888D9994B057 /* Pods */,
-				24E3F2BE47445BBF929E94D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +178,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* Dezignables_Example.app */,
 				607FACE51AFB9204008FA782 /* Dezignables_Tests.xctest */,
+				CC11C9061CADC27A00922003 /* Dezignables.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,7 +207,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				654913991C80A6980098AE5F /* Base.swift */,
+				654913991C80A6980098AE5F /* BaseTestCase.swift */,
 				65685FD71C837517008F5D9A /* DezignableBackground.swift */,
 				607FACEB1AFB9204008FA782 /* DezignableBorder.swift */,
 				654913931C80A60D0098AE5F /* DezignableCorner.swift */,
@@ -198,34 +265,81 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		F4885E931FB4888D9994B057 /* Pods */ = {
+		CC11C9001CADC20D00922003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1704FA10B467A9BC81E528D9 /* Pods-Dezignables_Example.debug.xcconfig */,
-				8CAC5626EFBAE56B1D6CCDF5 /* Pods-Dezignables_Example.release.xcconfig */,
-				CCCB2B04A70B963EA344E016 /* Pods-Dezignables_Tests.debug.xcconfig */,
-				760B07189BA5E82E4D45F9CF /* Pods-Dezignables_Tests.release.xcconfig */,
+				CC11C8FE1CADC1F300922003 /* FBSnapshotTestCase.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC11C9071CADC27A00922003 /* Dezignables */ = {
+			isa = PBXGroup;
+			children = (
+				CC11C90E1CADC29D00922003 /* Components */,
+				CC11C9311CADC2CA00922003 /* Dezignables */,
+				CC11C90A1CADC27A00922003 /* Info.plist */,
+			);
+			path = Dezignables;
+			sourceTree = "<group>";
+		};
+		CC11C90E1CADC29D00922003 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CC11C90F1CADC2B100922003 /* DezignableButton.swift */,
+				CC11C9101CADC2B100922003 /* DezignableImageView.swift */,
+				CC11C9111CADC2B100922003 /* DezignableLabel.swift */,
+				CC11C9121CADC2B100922003 /* DezignableTableViewCell.swift */,
+				CC11C9131CADC2B100922003 /* DezignableTableViewController.swift */,
+				CC11C9141CADC2B100922003 /* DezignableView.swift */,
+				CC11C9151CADC2B100922003 /* DezignableViewController.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		CC11C9311CADC2CA00922003 /* Dezignables */ = {
+			isa = PBXGroup;
+			children = (
+				CC11C91D1CADC2C600922003 /* DezignableBackground.swift */,
+				CC11C91E1CADC2C600922003 /* DezignableBorder.swift */,
+				CC11C91F1CADC2C600922003 /* DezignableCorner.swift */,
+				CC11C9201CADC2C600922003 /* DezignableHiddenNavigationBar.swift */,
+				CC11C9211CADC2C600922003 /* DezignableHiddenSections.swift */,
+				CC11C9221CADC2C600922003 /* DezignableHighlight.swift */,
+				CC11C9231CADC2C600922003 /* DezignableRotation.swift */,
+				CC11C9241CADC2C600922003 /* DezignableSeparator.swift */,
+				CC11C9251CADC2C600922003 /* DezignableShadow.swift */,
+				CC11C9261CADC2C600922003 /* DezignableStatusBar.swift */,
+			);
+			name = Dezignables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC11C9031CADC27A00922003 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		607FACCF1AFB9204008FA782 /* Dezignables_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Dezignables_Example" */;
 			buildPhases = (
-				97C5A1E2C6368C92486D930D /* Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				54C0274D197B7182487427E7 /* Embed Pods Frameworks */,
-				3BA121F712D58843D24F5FF5 /* Copy Pods Resources */,
+				CC0C90791CAE9B6A00EF445E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC11C9331CADC30300922003 /* PBXTargetDependency */,
 			);
 			name = Dezignables_Example;
 			productName = Dezignables;
@@ -236,12 +350,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Dezignables_Tests" */;
 			buildPhases = (
-				50F14D06C9703679B4D4D57A /* Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				BE04CFA558A7E314FE2A82C6 /* Embed Pods Frameworks */,
-				46D25CCED2A8D5D97C4E19F7 /* Copy Pods Resources */,
+				CC0C907C1CAE9BEA00EF445E /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -253,13 +365,31 @@
 			productReference = 607FACE51AFB9204008FA782 /* Dezignables_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CC11C9051CADC27A00922003 /* Dezignables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC11C90B1CADC27A00922003 /* Build configuration list for PBXNativeTarget "Dezignables" */;
+			buildPhases = (
+				CC11C9011CADC27A00922003 /* Sources */,
+				CC11C9021CADC27A00922003 /* Frameworks */,
+				CC11C9031CADC27A00922003 /* Headers */,
+				CC11C9041CADC27A00922003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dezignables;
+			productName = Dezignables;
+			productReference = CC11C9061CADC27A00922003 /* Dezignables.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Zilverline;
 				TargetAttributes = {
@@ -269,6 +399,9 @@
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					CC11C9051CADC27A00922003 = {
+						CreatedOnToolsVersion = 7.3;
 					};
 				};
 			};
@@ -287,6 +420,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* Dezignables_Example */,
 				607FACE41AFB9204008FA782 /* Dezignables_Tests */,
+				CC11C9051CADC27A00922003 /* Dezignables */,
 			);
 		};
 /* End PBXProject section */
@@ -309,100 +443,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC11C9041CADC27A00922003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3BA121F712D58843D24F5FF5 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dezignables_Example/Pods-Dezignables_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46D25CCED2A8D5D97C4E19F7 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dezignables_Tests/Pods-Dezignables_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		50F14D06C9703679B4D4D57A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		54C0274D197B7182487427E7 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dezignables_Example/Pods-Dezignables_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		97C5A1E2C6368C92486D930D /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BE04CFA558A7E314FE2A82C6 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dezignables_Tests/Pods-Dezignables_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
@@ -422,11 +470,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				65685FDE1C837EE8008F5D9A /* DezignableShadow.swift in Sources */,
-				6549139B1C80A6B30098AE5F /* Base.swift in Sources */,
+				6549139B1C80A6B30098AE5F /* BaseTestCase.swift in Sources */,
 				654913971C80A67D0098AE5F /* DezignableRotation.swift in Sources */,
 				65685FD91C837532008F5D9A /* DezignableBackground.swift in Sources */,
 				607FACEC1AFB9204008FA782 /* DezignableBorder.swift in Sources */,
 				654913981C80A6810098AE5F /* DezignableCorner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC11C9011CADC27A00922003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC11C92A1CADC2C600922003 /* DezignableHiddenNavigationBar.swift in Sources */,
+				CC11C9281CADC2C600922003 /* DezignableBorder.swift in Sources */,
+				CC11C92B1CADC2C600922003 /* DezignableHiddenSections.swift in Sources */,
+				CC11C9291CADC2C600922003 /* DezignableCorner.swift in Sources */,
+				CC11C92D1CADC2C600922003 /* DezignableRotation.swift in Sources */,
+				CC11C91A1CADC2B100922003 /* DezignableTableViewController.swift in Sources */,
+				CC11C91B1CADC2B100922003 /* DezignableView.swift in Sources */,
+				CC11C9301CADC2C600922003 /* DezignableStatusBar.swift in Sources */,
+				CC11C9271CADC2C600922003 /* DezignableBackground.swift in Sources */,
+				CC11C9191CADC2B100922003 /* DezignableTableViewCell.swift in Sources */,
+				CC11C9161CADC2B100922003 /* DezignableButton.swift in Sources */,
+				CC11C91C1CADC2B100922003 /* DezignableViewController.swift in Sources */,
+				CC11C9181CADC2B100922003 /* DezignableLabel.swift in Sources */,
+				CC11C92F1CADC2C600922003 /* DezignableShadow.swift in Sources */,
+				CC11C92E1CADC2C600922003 /* DezignableSeparator.swift in Sources */,
+				CC11C9171CADC2B100922003 /* DezignableImageView.swift in Sources */,
+				CC11C92C1CADC2C600922003 /* DezignableHighlight.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +509,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* Dezignables_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		CC11C9331CADC30300922003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC11C9051CADC27A00922003 /* Dezignables */;
+			targetProxy = CC11C9321CADC30300922003 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -544,9 +621,9 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1704FA10B467A9BC81E528D9 /* Pods-Dezignables_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Dezignables/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,9 +635,9 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CAC5626EFBAE56B1D6CCDF5 /* Pods-Dezignables_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Dezignables/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -572,10 +649,9 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCCB2B04A70B963EA344E016 /* Pods-Dezignables_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -590,15 +666,62 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 760B07189BA5E82E4D45F9CF /* Pods-Dezignables_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dezignables_Example.app/Dezignables_Example";
+			};
+			name = Release;
+		};
+		CC11C90C1CADC27A00922003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Dezignables/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zilverline.Dezignables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC11C90D1CADC27A00922003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Dezignables/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zilverline.Dezignables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -628,6 +751,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC11C90B1CADC27A00922003 /* Build configuration list for PBXNativeTarget "Dezignables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC11C90C1CADC27A00922003 /* Debug */,
+				CC11C90D1CADC27A00922003 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

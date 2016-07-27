@@ -6,7 +6,7 @@
 //
 //
 
-import Foundation
+import UIKit
 
 protocol DezignableHighlight {
   var selectedBackgroundColor: UIColor? { get set }
