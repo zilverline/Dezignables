@@ -20,9 +20,10 @@ class BaseTestCase: FBSnapshotTestCase {
     super.setUp()
     self.recordMode = false
     
-    self.containerView = UIView(frame: CGRectMake(0, 0, 400, 400))
-    self.subject = DezignableView(frame: CGRectMake(100, 100, 200, 200))
-    self.subject.backgroundColor = UIColor.redColor()
+    self.containerView = UIView(frame: CGRect(x: 0, y: 0, width: 400, height: 400))
+    self.subject = DezignableView(frame: CGRect(x: 100, y: 100, width: 200, height: 200))
+
+    self.subject.backgroundColor = UIColor.red
     self.containerView.addSubview(self.subject)
   }
   

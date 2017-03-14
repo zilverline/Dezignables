@@ -9,7 +9,7 @@ A collection of designable components I often use in my iOS projects. Checkout t
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `carthage bootstrap --no-use-binaries --platform ios` from the Example directory first.
 
 ## Installation
 

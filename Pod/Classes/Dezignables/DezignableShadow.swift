@@ -21,7 +21,7 @@ public extension DezignableShadow where Self: UIView {
       return
     }
     
-    self.layer.shadowColor = shadowColor.CGColor
+    self.layer.shadowColor = shadowColor.cgColor
     
     if !self.boxShadowRadius.isNaN && self.boxShadowRadius > 0 {
       self.layer.shadowRadius = self.boxShadowRadius

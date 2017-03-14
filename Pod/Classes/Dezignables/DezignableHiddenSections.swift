@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol DezignableHiddenSections {
-  func hideSection(section: Int)
-  func showSection(section: Int)
-  func isSectionHidden(section: Int) -> Bool
+  func hideSection(_ section: Int)
+  func showSection(_ section: Int)
+  func isSectionHidden(_ section: Int) -> Bool
 }

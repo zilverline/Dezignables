@@ -29,7 +29,7 @@ public extension DezignableBorder where Self: UIView {
     self.setupView()
   }
   
-  private func removeExistingBorderLayer() {
+  fileprivate func removeExistingBorderLayer() {
     self.layer.sublayers?.forEach({ layer in
       if layer.name == "dezignableBorderLayer" {
         layer.removeFromSuperlayer()
@@ -37,11 +37,11 @@ public extension DezignableBorder where Self: UIView {
     })
   }
   
-  private func createBorderLayer() {
+  fileprivate func createBorderLayer() {
     let borderLayer = CALayer()
     borderLayer.name = "dezignableBorderLayer"
     borderLayer.borderWidth = self.scaledValue(self.borderWidth)
-    borderLayer.borderColor = self.borderColor!.CGColor
+    borderLayer.borderColor = self.borderColor!.cgColor
     
     var frame = self.bounds
     
@@ -68,11 +68,11 @@ public extension DezignableBorder where Self: UIView {
     self.layer.addSublayer(borderLayer)
   }
   
-  private func setupView() {
+  fileprivate func setupView() {
     self.clipsToBounds = true
   }
   
-  private func scaledValue(value: CGFloat) -> CGFloat {
-    return self.borderScaleCorrection ? value / UIScreen.mainScreen().scale : value
+  fileprivate func scaledValue(_ value: CGFloat) -> CGFloat {
+    return self.borderScaleCorrection ? value / UIScreen.main.scale : value
   }
 }

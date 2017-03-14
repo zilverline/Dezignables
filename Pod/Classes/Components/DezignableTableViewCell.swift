@@ -8,32 +8,32 @@
 
 import UIKit
 
-public class DezignableTableViewCell: UITableViewCell {
+open class DezignableTableViewCell: UITableViewCell {
   var selectedBackgroundColor: UIColor? = nil
   var highlightBackgroundColor: UIColor? = nil
   var normalBackgroundColor: UIColor? = nil
   var borderTopLayer: CALayer?
   var borderBottomLayer: CALayer?
 
-  var borderTopInset: UIEdgeInsets = UIEdgeInsetsZero {
+  var borderTopInset: UIEdgeInsets = UIEdgeInsets.zero {
     didSet {
       self.setupTopBorder()
     }
   }
 
-  var borderBottomInset: UIEdgeInsets = UIEdgeInsetsZero {
+  var borderBottomInset: UIEdgeInsets = UIEdgeInsets.zero {
     didSet {
       self.setupBottomBorder()
     }
   }
 
-  var borderTopWidth: CGFloat = CGFloat.NaN {
+  var borderTopWidth: CGFloat = CGFloat.nan {
     didSet {
       self.setupTopBorder()
     }
   }
 
-  var borderBottomWidth: CGFloat = CGFloat.NaN {
+  var borderBottomWidth: CGFloat = CGFloat.nan {
     didSet {
       self.setupBottomBorder()
     }
@@ -73,79 +73,79 @@ public class DezignableTableViewCell: UITableViewCell {
     self.setupView()
   }
 
-  private func setupView() {
+  fileprivate func setupView() {
     self.setupTopBorder()
     self.setupBottomBorder()
   }
 
-  private func setupTopBorder() {
+  fileprivate func setupTopBorder() {
     if let existingBorder = self.borderTopLayer {
       existingBorder.removeFromSuperlayer()
     }
 
     if self.borderTop && self.borderTopColor != nil && self.borderTopWidth > 0 {
       let layer = CALayer()
-      layer.backgroundColor = self.borderTopColor!.CGColor
+      layer.backgroundColor = self.borderTopColor!.cgColor
       self.borderTopLayer = layer
       self.layer.addSublayer(layer)
     }
   }
 
-  private func setupBottomBorder() {
+  fileprivate func setupBottomBorder() {
     if let existingBorder = self.borderBottomLayer {
       existingBorder.removeFromSuperlayer()
     }
 
     if self.borderBottom && self.borderBottomColor != nil && self.borderBottomWidth > 0 {
       let layer = CALayer()
-      layer.backgroundColor = self.borderBottomColor!.CGColor
+      layer.backgroundColor = self.borderBottomColor!.cgColor
       self.borderBottomLayer = layer
       self.layer.addSublayer(layer)
     }
   }
 
-  override public func layoutSubviews() {
+  override open func layoutSubviews() {
     super.layoutSubviews()
     self.layoutBorders()
   }
 
-  private func layoutBorders() {
+  fileprivate func layoutBorders() {
     CATransaction.setAnimationDuration(0)
     let cellBounds = self.bounds
     let cellHeight = cellBounds.height
     let cellWidth = cellBounds.width
 
     if let topBorder = self.borderTopLayer {
-      let topFrame = CGRectMake(self.borderTopInset.left, self.borderTopInset.top, cellWidth - self.borderTopInset.right - self.borderTopInset.left, self.borderTopWidth - self.borderTopInset.bottom - self.borderBottomInset.top)
+      let topFrame = CGRect(x: self.borderTopInset.left, y: self.borderTopInset.top, width: cellWidth - self.borderTopInset.right - self.borderTopInset.left, height: self.borderTopWidth - self.borderTopInset.bottom - self.borderBottomInset.top)
       topBorder.frame = topFrame
     }
 
     if let bottomBorder = self.borderBottomLayer {
-      let bottomFrame = CGRectMake(self.borderBottomInset.left, cellHeight - self.borderBottomWidth + self.borderBottomInset.top, cellWidth - self.borderBottomInset.right - self.borderBottomInset.left, self.borderBottomWidth - self.borderBottomInset.bottom - self.borderBottomInset.top)
+      let bottomFrame = CGRect(x: self.borderBottomInset.left, y: cellHeight - self.borderBottomWidth + self.borderBottomInset.top, width: cellWidth - self.borderBottomInset.right - self.borderBottomInset.left, height: self.borderBottomWidth - self.borderBottomInset.bottom - self.borderBottomInset.top)
       bottomBorder.frame = bottomFrame
     }
   }
 
-  override public func setHighlighted(highlighted: Bool, animated: Bool) {
-    if self.selectionStyle != .None {
+  override open func setHighlighted(_ highlighted: Bool, animated: Bool) {
+    if self.selectionStyle != .none {
       if let color = self.highlightBackgroundColor {
-        self.backgroundColor = highlighted ? color : (self.normalBackgroundColor ?? UIColor.whiteColor())
+        self.backgroundColor = highlighted ? color : (self.normalBackgroundColor ?? UIColor.white)
       }
 
       super.setHighlighted(highlighted, animated: animated)
     }
   }
 
-  override public func setSelected(selected: Bool, animated: Bool) {
-    if self.selectionStyle != .None {
+  override open func setSelected(_ selected: Bool, animated: Bool) {
+    if self.selectionStyle != .none {
       if let color = self.selectedBackgroundColor {
         self.selectedBackgroundView = UIView()
         if selected {
           self.backgroundColor = color
           super.setSelected(selected, animated: animated)
         } else {
-          UIView.animateWithDuration(0.4, delay: 0, options: [.AllowUserInteraction, .BeginFromCurrentState], animations: {
-            self.backgroundColor = (self.normalBackgroundColor ?? UIColor.whiteColor())
+          UIView.animate(withDuration: 0.4, delay: 0, options: [.allowUserInteraction, .beginFromCurrentState], animations: {
+            self.backgroundColor = (self.normalBackgroundColor ?? UIColor.white)
           }, completion: { _ in
             super.setSelected(selected, animated: animated)
           })

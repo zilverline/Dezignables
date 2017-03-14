@@ -10,23 +10,22 @@ import Dezignables
 import UIKit
 
 class PrototypeTableViewController: DezignableTableViewController {
-
-  override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+  override func numberOfSections(in tableView: UITableView) -> Int {
     return 2
   }
-  
-  override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+
+  override func tableView(_ tableView: UITableView, titleForFooterInSection section: Int) -> String? {
     return "Section header \(section)"
   }
   
-  override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return 5
   }
   
-  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("prototypeCell", forIndexPath: indexPath) as! PrototypeTableViewCell
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath) as! PrototypeTableViewCell
     super.setupCell(cell, forIndexPath: indexPath)
-    cell.setupCell("Cell #\(indexPath.row)")
+    cell.setupCell(name: "Cell #\(indexPath.row)")
     return cell
   }
   
