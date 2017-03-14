@@ -8,35 +8,35 @@
 
 import UIKit
 
-@IBDesignable public class DezignableViewController: UIViewController, DezignableHiddenNavigationBar, DezignableStatusBar {
-  @IBInspectable public var navigationBarHidden: Bool = false
-  @IBInspectable public var statusBarLight: Bool = false
-  @IBInspectable public var statusBarHidden: Bool = false
+@IBDesignable open class DezignableViewController: UIViewController, DezignableHiddenNavigationBar, DezignableStatusBar {
+  @IBInspectable open var navigationBarHidden: Bool = false
+  @IBInspectable open var statusBarLight: Bool = false
+  @IBInspectable open var statusBarHidden: Bool = false
   
-  public override func viewWillAppear(animated: Bool) {
+  open override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     self.setupHiddenNavigationBar()
   }
   
-  public override func viewWillDisappear(animated: Bool) {
+  open override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
     self.resetHiddenNavigationBar()
   }
   
-  public override func preferredStatusBarStyle() -> UIStatusBarStyle {
-    return self.statusBarLight ? .LightContent : .Default
+  open override var preferredStatusBarStyle : UIStatusBarStyle {
+    return self.statusBarLight ? .lightContent : .default
   }
   
-  public override func prefersStatusBarHidden() -> Bool {
+  open override var prefersStatusBarHidden : Bool {
     return self.statusBarHidden
   }
 }
 
 public extension UIViewController {
-  @IBAction public func unwindToViewController(sender: UIStoryboardSegue) {
+  @IBAction public func unwindToViewController(_ sender: UIStoryboardSegue) {
   }
   
-  @IBAction public func dismissCurrentViewController(sender: UIStoryboardSegue) {
-    sender.sourceViewController.dismissViewControllerAnimated(true, completion: nil)
+  @IBAction public func dismissCurrentViewController(_ sender: UIStoryboardSegue) {
+    sender.source.dismiss(animated: true, completion: nil)
   }
 }

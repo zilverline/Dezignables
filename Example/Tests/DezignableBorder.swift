@@ -10,8 +10,8 @@ class DezignableBorderTests: BaseTestCase {
     self.subject.borderBottom = true
     self.subject.borderLeft = true
     self.subject.borderRight = true
-    self.subject.borderColor = UIColor.blackColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.black
+    self.subject.backgroundColor = UIColor.red
     FBSnapshotVerifyView(self.subject)
   }
   
@@ -21,8 +21,8 @@ class DezignableBorderTests: BaseTestCase {
     self.subject.borderBottom = true
     self.subject.borderLeft = true
     self.subject.borderRight = true
-    self.subject.borderColor = UIColor.blackColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.black
+    self.subject.backgroundColor = UIColor.red
     self.subject.borderScaleCorrection = true
     FBSnapshotVerifyView(self.subject)
   }
@@ -30,32 +30,32 @@ class DezignableBorderTests: BaseTestCase {
   func testTopBorder() {
     self.subject.borderWidth = 5.0
     self.subject.borderTop = true
-    self.subject.borderColor = UIColor.blackColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.black
+    self.subject.backgroundColor = UIColor.red
     FBSnapshotVerifyView(self.subject)
   }
   
   func testLeftBorder() {
     self.subject.borderWidth = 5.0
     self.subject.borderLeft = true
-    self.subject.borderColor = UIColor.blackColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.black
+    self.subject.backgroundColor = UIColor.red
     FBSnapshotVerifyView(self.subject)
   }
   
   func testRightBorder() {
     self.subject.borderWidth = 5.0
     self.subject.borderRight = true
-    self.subject.borderColor = UIColor.blackColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.black
+    self.subject.backgroundColor = UIColor.red
     FBSnapshotVerifyView(self.subject)
   }
   
   func testBottomBorder() {
     self.subject.borderWidth = 5.0
     self.subject.borderBottom = true
-    self.subject.borderColor = UIColor.blackColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.black
+    self.subject.backgroundColor = UIColor.red
     FBSnapshotVerifyView(self.subject)
   }
   
@@ -65,8 +65,8 @@ class DezignableBorderTests: BaseTestCase {
     self.subject.borderBottom = true
     self.subject.borderLeft = true
     self.subject.borderRight = true
-    self.subject.borderColor = UIColor.blueColor()
-    self.subject.backgroundColor = UIColor.redColor()
+    self.subject.borderColor = UIColor.blue
+    self.subject.backgroundColor = UIColor.red
     FBSnapshotVerifyView(self.subject)
   }
 }

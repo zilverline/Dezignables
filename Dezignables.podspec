@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Dezignables"
-  s.version          = "1.3.0"
+  s.version          = "3.0.0"
   s.summary          = "A collection of @IBDesignables"
 
   s.description      = <<-DESC

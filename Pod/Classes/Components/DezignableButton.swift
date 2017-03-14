@@ -8,161 +8,161 @@
 
 import UIKit
 
-@IBDesignable public class DezignableButton: UIButton, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground, DezignableShadow, DezignableHighlight {
+@IBDesignable open class DezignableButton: UIButton, DezignableBorder, DezignableCorner, DezignableRotation, DezignableBackground, DezignableShadow, DezignableHighlight {
   
-  @IBInspectable public var backgroundFillColor: UIColor? = nil {
+  @IBInspectable open var backgroundFillColor: UIColor? = nil {
     didSet {
       self.setupBackground()
     }
   }
   
-  @IBInspectable public var backgroundGradientStartColor: UIColor? = nil {
+  @IBInspectable open var backgroundGradientStartColor: UIColor? = nil {
     didSet {
       self.setupBackground()
     }
   }
   
-  @IBInspectable public var backgroundGradientStopColor: UIColor? = nil {
+  @IBInspectable open var backgroundGradientStopColor: UIColor? = nil {
     didSet {
       self.setupBackground()
     }
   }
   
-  @IBInspectable public var backgroundGradientStartPoint: CGPoint = CGPoint.zero {
+  @IBInspectable open var backgroundGradientStartPoint: CGPoint = CGPoint.zero {
     didSet {
       self.setupBackground()
     }
   }
   
-  @IBInspectable public var backgroundGradientStopPoint: CGPoint = CGPoint.zero {
+  @IBInspectable open var backgroundGradientStopPoint: CGPoint = CGPoint.zero {
     didSet {
       self.setupBackground()
     }
   }
   
-  @IBInspectable public var borderWidth: CGFloat = CGFloat.NaN {
+  @IBInspectable open var borderWidth: CGFloat = CGFloat.nan {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var borderColor: UIColor? = nil {
+  @IBInspectable open var borderColor: UIColor? = nil {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var borderTop: Bool = false {
+  @IBInspectable open var borderTop: Bool = false {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var borderBottom: Bool = false {
+  @IBInspectable open var borderBottom: Bool = false {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var borderLeft: Bool = false {
+  @IBInspectable open var borderLeft: Bool = false {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var borderRight: Bool = false {
+  @IBInspectable open var borderRight: Bool = false {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var borderScaleCorrection: Bool = false {
+  @IBInspectable open var borderScaleCorrection: Bool = false {
     didSet {
       self.setupBorder()
     }
   }
   
-  @IBInspectable public var cornerRadius: CGFloat = CGFloat.NaN {
+  @IBInspectable open var cornerRadius: CGFloat = CGFloat.nan {
     didSet {
       self.setupCorner()
     }
   }
   
-  @IBInspectable public var cornerCircle: Bool = false {
+  @IBInspectable open var cornerCircle: Bool = false {
     didSet {
       self.setupCorner()
     }
   }
   
-  @IBInspectable public var rotation: CGFloat = CGFloat.NaN {
+  @IBInspectable open var rotation: CGFloat = CGFloat.nan {
     didSet {
       self.setupRotation()
     }
   }
   
-  @IBInspectable public var boxShadowColor: UIColor? = nil {
+  @IBInspectable open var boxShadowColor: UIColor? = nil {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var boxShadowRadius: CGFloat = CGFloat.NaN {
+  @IBInspectable open var boxShadowRadius: CGFloat = CGFloat.nan {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var boxShadowOpacity: CGFloat = CGFloat.NaN {
+  @IBInspectable open var boxShadowOpacity: CGFloat = CGFloat.nan {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var boxShadowOffset: CGPoint = CGPointMake(CGFloat.NaN, CGFloat.NaN) {
+  @IBInspectable open var boxShadowOffset: CGPoint = CGPoint(x: CGFloat.nan, y: CGFloat.nan) {
     didSet {
       self.setupShadow()
     }
   }
   
-  @IBInspectable public var selectedBackgroundColor: UIColor? = nil {
+  @IBInspectable open var selectedBackgroundColor: UIColor? = nil {
     didSet {
-      self.backgroundColor = self.selected ? self.selectedBackgroundColor : super.backgroundColor
+      self.backgroundColor = self.isSelected ? self.selectedBackgroundColor : super.backgroundColor
     }
   }
   
-  @IBInspectable public var highlightBackgroundColor: UIColor? = nil {
+  @IBInspectable open var highlightBackgroundColor: UIColor? = nil {
     didSet {
-      self.backgroundColor = self.highlighted ? self.highlightBackgroundColor : super.backgroundColor
+      self.backgroundColor = self.isHighlighted ? self.highlightBackgroundColor : super.backgroundColor
     }
   }
   
-  @IBInspectable public var normalBackgroundColor: UIColor? = nil
+  @IBInspectable open var normalBackgroundColor: UIColor? = nil
   
-  override public var selected: Bool {
+  override open var isSelected: Bool {
     get {
-      return super.selected
+      return super.isSelected
     }
     set {
       if let selectedBackgroundColor = self.selectedBackgroundColor {
         self.backgroundColor = newValue ? selectedBackgroundColor : self.normalBackgroundColor
       }
-      super.selected = newValue
+      super.isSelected = newValue
     }
   }
   
-  override public var highlighted: Bool {
+  override open var isHighlighted: Bool {
     get {
-      return super.highlighted
+      return super.isHighlighted
     }
     set {
       if let highlightBackgroundColor = self.highlightBackgroundColor {
         self.backgroundColor = newValue ? highlightBackgroundColor : normalBackgroundColor
       }
-      super.highlighted = newValue
+      super.isHighlighted = newValue
     }
   }
   
-  public override func layoutSubviews() {
+  open override func layoutSubviews() {
     super.layoutSubviews()
     self.setupBackground()
     self.setupBorder()

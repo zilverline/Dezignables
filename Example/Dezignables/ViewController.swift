@@ -11,9 +11,9 @@ import UIKit
 class ViewController: UIViewController {
 
   @IBAction func tapButton(sender: AnyObject) {
-    let alertController = UIAlertController(title: "Tap", message: "Tapped the button", preferredStyle: .Alert)
-    alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-    UIApplication.sharedApplication().keyWindow!.rootViewController?.presentViewController(alertController, animated: true, completion: nil)
+    let alertController = UIAlertController(title: "Tap", message: "Tapped the button", preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    UIApplication.shared.keyWindow!.rootViewController?.present(alertController, animated: true, completion: nil)
   }
 
 }

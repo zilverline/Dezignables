@@ -27,7 +27,7 @@ public extension DezignableBackground where Self: UIView {
     }
   }
   
-  private func removeExistingBackgroundView() {
+  fileprivate func removeExistingBackgroundView() {
     self.subviews.forEach({ subview in
       if subview is BackgroundView {
         subview.removeFromSuperview()
@@ -35,28 +35,28 @@ public extension DezignableBackground where Self: UIView {
     })
   }
   
-  private func createBackgroundFillLayer() {
+  fileprivate func createBackgroundFillLayer() {
     let view = BackgroundView(frame: self.bounds)
     let backgroundLayer = CALayer()
     backgroundLayer.name = "dezignableBackgroundLayer"
     backgroundLayer.frame = self.bounds
     backgroundLayer.cornerRadius = self.layer.cornerRadius
-    backgroundLayer.backgroundColor = self.backgroundFillColor!.CGColor
+    backgroundLayer.backgroundColor = self.backgroundFillColor!.cgColor
     view.layer.addSublayer(backgroundLayer)
-    self.insertSubview(view, atIndex: 0)
+    self.insertSubview(view, at: 0)
   }
   
-  private func createBackgroundGradientLayer() {
+  fileprivate func createBackgroundGradientLayer() {
     let view = BackgroundView(frame: self.bounds)
     let backgroundLayer = CAGradientLayer()
     backgroundLayer.name = "dezignableBackgroundLayer"
     backgroundLayer.frame = self.bounds
     backgroundLayer.cornerRadius = self.layer.cornerRadius
-    backgroundLayer.colors = [self.backgroundGradientStartColor!.CGColor, self.backgroundGradientStopColor!.CGColor]
+    backgroundLayer.colors = [self.backgroundGradientStartColor!.cgColor, self.backgroundGradientStopColor!.cgColor]
     backgroundLayer.startPoint = self.backgroundGradientStartPoint
     backgroundLayer.endPoint = self.backgroundGradientStopPoint
     view.layer.addSublayer(backgroundLayer)
-    self.insertSubview(view, atIndex: 0)
+    self.insertSubview(view, at: 0)
   }
 }
 
