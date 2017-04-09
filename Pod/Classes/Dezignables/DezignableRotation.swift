@@ -20,6 +20,6 @@ public extension DezignableRotation where Self: UIView {
       return
     }
     
-    self.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI) * self.rotation / 180)
+    self.transform = CGAffineTransform(rotationAngle: CGFloat.pi * self.rotation / 180)
   }
 }
